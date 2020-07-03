@@ -17,7 +17,7 @@ import Modal from '../components/elements/Modal';
 import Accordion from '../components/elements/Accordion';
 import AccordionItem from '../components/elements/AccordionItem';
 
-class Secondary extends React.Component {
+class TestingCenter extends React.Component {
 
   state = {
     demoModalActive: false
@@ -95,7 +95,7 @@ class Secondary extends React.Component {
             <SectionHeader data={genericSection01Header} className="center-content" />
             <ButtonGroup>
               <Button color="primary" wideMobile>Get started</Button>
-              <Button color="secondary" wideMobile>Get started</Button>
+              <Button color="TestingCenter" wideMobile>Get started</Button>
               <Button color="dark" wideMobile>Get started</Button>
             </ButtonGroup>
           </div>
@@ -219,4 +219,4 @@ const formStyle = {
   margin: '0 auto'
 }
 
-export default Secondary;
+export default TestingCenter;
