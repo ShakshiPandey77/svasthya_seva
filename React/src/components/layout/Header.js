@@ -115,23 +115,66 @@ class Header extends React.Component {
                       this.state.isActive && 'is-active'
                     )}>
                   <div className="header-nav-inner">
+
                     <ul className={
                       classNames(
                         'list-reset text-xxs',
                         navPosition && `header-nav-${navPosition}`
                       )}>
                       <li>
-                        <Link to="/secondary/" onClick={this.closeMenu}>Secondary page</Link>
+                        <Link to="/helpline/" onClick={this.closeMenu}>Helpline</Link>
                       </li>
                     </ul>
-                    {!hideSignin &&
-                      <ul
-                        className="list-reset header-nav-right"
-                      >
-                        <li>
-                          <Link to="/signup/" className="button button-primary button-wide-mobile button-sm" onClick={this.closeMenu}>Sign up</Link>
-                        </li>
-                      </ul>}
+
+                    <ul className={
+                      classNames(
+                        'list-reset text-xxs',
+                        navPosition && `header-nav-${navPosition}`
+                      )}>
+                      <li>
+                        <Link to="/hospitals/" onClick={this.closeMenu}>Hospitals</Link>
+                      </li>
+                    </ul>
+
+                    <ul className={
+                      classNames(
+                        'list-reset text-xxs',
+                        navPosition && `header-nav-${navPosition}`
+                      )}>
+                      <li>
+                        <Link to="/quarantineCenter/" onClick={this.closeMenu}>Quarantine Center</Link>
+                      </li>
+                    </ul>
+
+                    <ul className={
+                      classNames(
+                        'list-reset text-xxs',
+                        navPosition && `header-nav-${navPosition}`
+                      )}>
+                      <li>
+                        <Link to="/testingCenter/" onClick={this.closeMenu}>Testing Center</Link>
+                      </li>
+                    </ul>
+
+                    <ul className={
+                      classNames(
+                        'list-reset text-xxs',
+                        navPosition && `header-nav-${navPosition}`
+                      )}>
+                      <li>
+                        <Link to="/information/" onClick={this.closeMenu}>Information</Link>
+                      </li>
+                    </ul>
+
+                    <ul className={
+                      classNames(
+                        'list-reset text-xxs',
+                        navPosition && `header-nav-${navPosition}`
+                      )}>
+                      <li>
+                        <Link to="/aboutus/" onClick={this.closeMenu}>About us</Link>
+                      </li>
+                    </ul>
                   </div>
                 </nav>
               </React.Fragment>}

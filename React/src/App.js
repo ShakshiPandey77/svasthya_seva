@@ -8,11 +8,18 @@ import LayoutDefault from './layouts/LayoutDefault';
 import LayoutAlternative from './layouts/LayoutAlternative';
 import LayoutSignin from './layouts/LayoutSignin';
 
-// Views 
+// Views
 import Home from './views/Home';
 import Secondary from './views/Secondary';
 import Login from './views/Login';
 import Signup from './views/Signup';
+
+import Helpline from './views/Helpline';
+import Hospitals from './views/Hospitals';
+import AboutUs from './views/Aboutus';
+import QuarantineCenter from './views/QuarantineCenter';
+import TestingCenter from './views/TestingCenter';
+import Information from './views/Information';
 
 class App extends React.Component {
 
@@ -38,6 +45,13 @@ class App extends React.Component {
             <AppRoute exact path="/secondary" component={Secondary} layout={LayoutAlternative} />
             <AppRoute exact path="/login" component={Login} layout={LayoutSignin} />
             <AppRoute exact path="/signup" component={Signup} layout={LayoutSignin} />
+
+            <AppRoute exact path="/helpline" component={Helpline} layout={LayoutAlternative} />
+            <AppRoute exact path="/hospitals" component={Hospitals} layout={LayoutAlternative} />
+            <AppRoute exact path="/quarantineCenter" component={QuarantineCenter} layout={LayoutAlternative} />
+            <AppRoute exact path="/testingCenter" component={TestingCenter} layout={LayoutAlternative} />
+            <AppRoute exact path="/information" component={Information} layout={LayoutAlternative} />
+            <AppRoute exact path="/aboutus" component={AboutUs} layout={LayoutAlternative} />
           </Switch>
         )} />
     );
