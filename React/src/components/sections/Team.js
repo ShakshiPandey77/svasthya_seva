@@ -48,10 +48,10 @@ class Team extends React.Component {
       pushLeft && 'push-left'
     );
 
-    const sectionHeader = {
-      title: 'Our story - Lorem ipsum is placeholder text.',
-      paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.'
-    };
+    // const sectionHeader = {
+    //   title: 'Our story - Lorem ipsum is placeholder text.',
+    //   paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.'
+    // };
 
     return (
       <section
@@ -60,21 +60,21 @@ class Team extends React.Component {
       >
         <div className="container">
           <div className={innerClasses}>
-            <SectionHeader data={sectionHeader} className="center-content reveal-from-bottom" />
+            {/* <SectionHeader data={sectionHeader} className="center-content reveal-from-bottom" /> */}
             <div className={tilesClasses}>
 
               <div className="tiles-item reveal-from-bottom" data-reveal-container=".tiles-wrap">
                 <div className="tiles-item-inner">
                   <div className="team-item-header">
-                    <div className="team-item-image mb-24 illustration-element-06">
+                    {/* <div className="team-item-image mb-24 illustration-element-06">
                       <Image
                         src={require('./../../assets/images/team-member-01.jpg')}
                         alt="Team member 01"
                         width={200}
                         height={200} />
-                    </div>
+                    </div> */}
                   </div>
-                  <div className="team-item-content">
+                  {/* <div className="team-item-content">
                     <h5 className="team-item-name mt-0 mb-4">
                       Markus Hasinika
                     </h5>
@@ -84,11 +84,11 @@ class Team extends React.Component {
                     <p className="m-0 text-sm">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
-              <div className="tiles-item reveal-from-bottom" data-reveal-container=".tiles-wrap" data-reveal-delay="150">
+              {/* <div className="tiles-item reveal-from-bottom" data-reveal-container=".tiles-wrap" data-reveal-delay="150">
                 <div className="tiles-item-inner">
                   <div className="team-item-header">
                     <div className="team-item-image mb-24">
@@ -111,9 +111,9 @@ class Team extends React.Component {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="tiles-item reveal-from-bottom" data-reveal-container=".tiles-wrap" data-reveal-delay="300">
+              {/* <div className="tiles-item reveal-from-bottom" data-reveal-container=".tiles-wrap" data-reveal-delay="300">
                 <div className="tiles-item-inner">
                   <div className="team-item-header">
                     <div className="team-item-image mb-24">
@@ -136,9 +136,9 @@ class Team extends React.Component {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="tiles-item reveal-from-bottom" data-reveal-container=".tiles-wrap" data-reveal-delay="450">
+              {/* <div className="tiles-item reveal-from-bottom" data-reveal-container=".tiles-wrap" data-reveal-delay="450">
                 <div className="tiles-item-inner">
                   <div className="team-item-header">
                     <div className="team-item-image mb-24 illustration-element-07">
@@ -161,9 +161,9 @@ class Team extends React.Component {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="tiles-item reveal-from-bottom" data-reveal-container=".tiles-wrap" data-reveal-delay="600">
+              {/* <div className="tiles-item reveal-from-bottom" data-reveal-container=".tiles-wrap" data-reveal-delay="600">
                 <div className="tiles-item-inner">
                   <div className="team-item-header">
                     <div className="team-item-image mb-24">
@@ -186,9 +186,9 @@ class Team extends React.Component {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="tiles-item reveal-from-bottom" data-reveal-container=".tiles-wrap" data-reveal-delay="500">
+              {/* <div className="tiles-item reveal-from-bottom" data-reveal-container=".tiles-wrap" data-reveal-delay="500">
                 <div className="tiles-item-inner">
                   <div className="team-item-header">
                     <div className="team-item-image mb-24 illustration-element-08">
@@ -211,7 +211,7 @@ class Team extends React.Component {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
             </div>
           </div>

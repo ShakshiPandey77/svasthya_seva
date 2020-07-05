@@ -45,7 +45,7 @@ class Clients extends React.Component {
         {...props}
         className={outerClasses}
       >
-        <div className="container">
+        {/* <div className="container">
           <div
             className={innerClasses}
           >
@@ -87,7 +87,7 @@ class Clients extends React.Component {
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
       </section>
     );
   }

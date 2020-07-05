@@ -69,7 +69,7 @@ class HeroFull extends React.Component {
               </div>
             </div>
             <div className="hero-figure illustration-element-01 reveal-from-bottom" data-reveal-delay="150">
-              <a
+              {/* <a
                 data-video="https://player.vimeo.com/video/174002812"
                 href="#0"
                 aria-controls="video-modal"
@@ -81,7 +81,7 @@ class HeroFull extends React.Component {
                   alt="Video"
                   width={896}
                   height={502} />
-              </a>
+              </a> */}
             </div>
             <Modal
               id="video-modal"
