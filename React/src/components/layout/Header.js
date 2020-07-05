@@ -90,6 +90,7 @@ class Header extends React.Component {
     return (
       <header {...props} className={classes}>
         <div className="container">
+
           <div
             className={classNames(
               "site-header-inner",
@@ -97,7 +98,7 @@ class Header extends React.Component {
             )}
           >
             <Logo />
-            {!hideNav && (
+
               <React.Fragment>
                 <button
                   ref={this.hamburger}
@@ -117,6 +118,7 @@ class Header extends React.Component {
                   )}
                 >
                   <div className="header-nav-inner">
+
                     <ul
                       className={classNames(
                         "list-reset text-xxs",
@@ -129,6 +131,7 @@ class Header extends React.Component {
                         </Link>
                       </li>
                     </ul>
+
 
                     <ul
                       className={classNames(
@@ -176,9 +179,9 @@ class Header extends React.Component {
                       )}
                     >
                       <li>
-                        <Link to="/information/" onClick={this.closeMenu}>
-                          Information
-                        </Link>
+
+                        <Link to="/information/" onClick={this.closeMenu}>Awareness</Link>
+
                       </li>
                     </ul>
 

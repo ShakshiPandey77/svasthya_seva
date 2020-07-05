@@ -13,13 +13,17 @@ const Logo = ({ className, ...props }) => {
           <Image
             src={require("./../../../assets/images/home.png")}
             alt="Spike"
+
             width={50}
             height={32}
           />
+
         </Link>
       </h1>
+
     </div>
   );
+
 
 };
 
