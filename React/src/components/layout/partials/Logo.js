@@ -20,7 +20,6 @@ const Logo = ({ className, ...props }) => {
       </h1>
     </div>
   );
-
 };
 
 export default Logo;

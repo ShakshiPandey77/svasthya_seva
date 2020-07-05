@@ -5,17 +5,16 @@ import FeaturesSplit from '../components/sections/FeaturesSplit';
 import Pricing from '../components/sections/Pricing';
 import Testimonial from '../components/sections/Testimonial';
 import Cta from '../components/sections/Cta';
+import Statistics from '../components/sections/Statistics';
+import Bargraph from '../components/sections/Bargraph';
 
 class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <HeroFull hasBgColor invertColor className="illustration-section-01" />
-        <FeaturesTiles />
-        <FeaturesSplit invertMobile topDivider imageFill />
-        <Pricing hasBgColor invertColor pricingSwitcher />
-        <Testimonial />
-        <Cta hasBgColor invertColor split className="has-bg-color-cut" />
+
+      <Statistics hasBgColor invertColor pricingSwitcher />
+      
       </React.Fragment>
     );
   }
