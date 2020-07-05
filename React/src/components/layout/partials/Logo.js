@@ -24,9 +24,11 @@ const Logo = ({
             src={require('./../../../assets/images/logo.svg')}
             alt="Spike"
             width={32}
-            height={32} />
+            height={32}
+            />
         </Link>
       </h1>
+
     </div>
   );
 }

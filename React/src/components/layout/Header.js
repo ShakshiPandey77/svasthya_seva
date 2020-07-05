@@ -94,7 +94,9 @@ class Header extends React.Component {
               'site-header-inner',
               bottomDivider && 'has-bottom-divider'
             )}>
+
             <Logo />
+            <h6>svasthya seva</h6>
             {!hideNav &&
               <React.Fragment>
                 <button
@@ -116,15 +118,6 @@ class Header extends React.Component {
                     )}>
                   <div className="header-nav-inner">
 
-                    <ul className={
-                      classNames(
-                        'list-reset text-xxs',
-                        navPosition && `header-nav-${navPosition}`
-                      )}>
-                      <li>
-                        <Link to="/helpline/" onClick={this.closeMenu}>Helpline</Link>
-                      </li>
-                    </ul>
 
                     <ul className={
                       classNames(
@@ -162,7 +155,7 @@ class Header extends React.Component {
                         navPosition && `header-nav-${navPosition}`
                       )}>
                       <li>
-                        <Link to="/information/" onClick={this.closeMenu}>Information</Link>
+                        <Link to="/information/" onClick={this.closeMenu}>Awareness</Link>
                       </li>
                     </ul>
 
