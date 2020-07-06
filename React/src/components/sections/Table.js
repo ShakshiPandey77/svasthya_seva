@@ -223,9 +223,9 @@ const EnhancedTableToolbar = props => {
           component="div"
           align="center"
         >
-          <br></br>
+          {/* <br></br>
           QUARANTINE CENTER
-          <br></br>
+          <br></br> */}
         </Typography>
       )}
       <br></br>
@@ -254,11 +254,11 @@ EnhancedTableToolbar.propTypes = {
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100%",
-    paddingTop: theme.spacing(10)
+    paddingTop: theme.spacing(2)
   },
   paper: {
     width: "100%",
-    marginBottom: theme.spacing(10),
+    marginBottom: theme.spacing(5),
     paddingRight: theme.spacing(6),
     paddingLeft: theme.spacing(6)
   },

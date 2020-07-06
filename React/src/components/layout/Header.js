@@ -90,15 +90,17 @@ class Header extends React.Component {
     return (
       <header {...props} className={classes}>
         <div className="container">
-          <div className={
-            classNames(
-              'site-header-inner',
-              bottomDivider && 'has-bottom-divider'
-            )}>
-
+          <div
+            className={classNames(
+              "site-header-inner",
+              bottomDivider && "has-bottom-divider"
+            )}
+          >
             <Logo />
-            <h6>svasthya seva</h6>
-            {!hideNav &&
+            <Link to="/">
+              <h6>Svasthya Seva</h6>
+            </Link>
+            {!hideNav && (
               <React.Fragment>
                 <button
                   ref={this.hamburger}
@@ -118,7 +120,7 @@ class Header extends React.Component {
                   )}
                 >
                   <div className="header-nav-inner">
-                    <ul
+                    {/* <ul
                       className={classNames(
                         "list-reset text-xxs",
                         navPosition && `header-nav-${navPosition}`
@@ -129,8 +131,7 @@ class Header extends React.Component {
                           Helpline
                         </Link>
                       </li>
-                    </ul>
-
+                    </ul> */}
 
                     <ul
                       className={classNames(
@@ -178,7 +179,9 @@ class Header extends React.Component {
                       )}
                     >
                       <li>
-                        <Link to="/information/" onClick={this.closeMenu}>Awareness</Link>
+                        <Link to="/information/" onClick={this.closeMenu}>
+                          Awareness
+                        </Link>
                       </li>
                     </ul>
 
@@ -197,7 +200,7 @@ class Header extends React.Component {
                   </div>
                 </nav>
               </React.Fragment>
-            }
+            )}
           </div>
         </div>
       </header>
