@@ -98,7 +98,7 @@ class Header extends React.Component {
           >
             <Logo />
             <Link to="/">
-              <h6>Svasthya Seva</h6>
+              <h5>Svasthya Seva</h5>
             </Link>
             {!hideNav && (
               <React.Fragment>
@@ -178,11 +178,11 @@ class Header extends React.Component {
                         navPosition && `header-nav-${navPosition}`
                       )}
                     >
-                      <li>
+                      {/* <li>
                         <Link to="/information/" onClick={this.closeMenu}>
                           Awareness
                         </Link>
-                      </li>
+                      </li> */}
                     </ul>
 
                     <ul
@@ -191,11 +191,11 @@ class Header extends React.Component {
                         navPosition && `header-nav-${navPosition}`
                       )}
                     >
-                      <li>
+                      {/* <li>
                         <Link to="/aboutus/" onClick={this.closeMenu}>
                           About us
                         </Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </nav>

@@ -16,28 +16,28 @@ const columns = [
     id: "ventilators",
     label: "VENTILATORS AVAILABLE",
     minWidth: 170,
-    align: "center",
+    align: "left",
     format: value => value.toLocaleString("en-Us")
   },
   {
     id: "price",
     label: "PRICE",
     minWidth: 170,
-    align: "center",
+    align: "left",
     format: value => value.toLocaleString("en-US")
   },
   {
     id: "address",
     label: "ADDRESS",
     minWidth: 200,
-    align: "center",
+    align: "left",
     format: value => value.toFixed(2)
   },
   {
     id: "contact",
     label: "CONTACT",
     minWidth: 100,
-    align: "center",
+    align: "left",
     format: value => value.toFixed(2)
   }
 ];

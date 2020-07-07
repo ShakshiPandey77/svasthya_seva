@@ -6,7 +6,7 @@ const FooterSocial = ({ className, ...props }) => {
 
   return (
     <div {...props} className={classes}>
-      <ul className="list-reset">
+      {/* <ul className="list-reset">
         <li>
           <a href="https://facebook.com/">
             <svg
@@ -34,7 +34,7 @@ const FooterSocial = ({ className, ...props }) => {
           </a>
         </li>
         <li>
-          <a href="https://google.com/">
+          <a href="https://instagram.com/">
             <svg
               width="16"
               height="16"
@@ -50,7 +50,7 @@ const FooterSocial = ({ className, ...props }) => {
             </svg>
           </a>
         </li>
-      </ul>
+      </ul> */}
     </div>
   );
 };

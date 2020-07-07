@@ -342,19 +342,19 @@ const headCells = [
     id: "name",
     numeric: false,
     disablePadding: true,
-    label: "Lab Name"
+    label: "LAB NAME"
   },
   {
     id: "address",
     numeric: true,
     disablePadding: false,
-    label: "Address"
+    label: "ADDRESS"
   },
   {
     id: "contact",
     numeric: true,
     disablePadding: false,
-    label: "Contact"
+    label: "CONTACT"
   }
 ];
 
@@ -386,7 +386,7 @@ function EnhancedTableHead(props) {
         {headCells.map(headCell => (
           <TableCell
             key={headCell.id}
-            align={headCell.numeric ? "center" : "center"}
+            align={headCell.numeric ? "left" : "left"}
             padding={headCell.disablePadding ? "none" : "default"}
             sortDirection={orderBy === headCell.id ? order : false}
           >
@@ -632,12 +632,12 @@ export default function EnhancedTable() {
                         id={labelId}
                         scope="row"
                         padding="none"
-                        align="center"
+                        align="left"
                       >
                         {row.name}
                       </TableCell>
-                      <TableCell align="center">{row.address}</TableCell>
-                      <TableCell align="center">{row.contact}</TableCell>
+                      <TableCell align="left">{row.address}</TableCell>
+                      <TableCell align="left">{row.contact}</TableCell>
                     </TableRow>
                   );
                 })}

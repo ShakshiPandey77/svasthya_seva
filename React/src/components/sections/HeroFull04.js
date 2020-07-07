@@ -59,7 +59,7 @@ class HeroFull extends React.Component {
           <div className={innerClasses}>
             <div className="hero-content">
               <div className="container-xs">
-                <h1 className="m-0 reveal-from-top">TESTING CENTERS</h1>
+                <h1 className="m-0 reveal-from-top">TESTING CENTER</h1>
               </div>
             </div>
             <div
@@ -80,13 +80,13 @@ class HeroFull extends React.Component {
                   height={502} />
               </a> */}
             </div>
-            <Modal
+            {/* <Modal
               id="video-modal"
               show={this.state.videoModalActive}
               handleClose={this.closeModal}
               video="https://player.vimeo.com/video/174002812"
               videoTag="iframe"
-            />
+            /> */}
           </div>
         </div>
       </section>

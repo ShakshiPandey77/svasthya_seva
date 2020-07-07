@@ -34,12 +34,12 @@ class Hospitals extends React.Component {
     this.setState({ demoModalActive: false });
   };
 
-  componentDidMount() {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      console.log("Latitude is :", position.coords.latitude);
-      console.log("Longitude is :", position.coords.longitude);
-    });
-  }
+  // componentDidMount() {
+  //   navigator.geolocation.getCurrentPosition(function(position) {
+  //     console.log("Latitude is :", position.coords.latitude);
+  //     console.log("Longitude is :", position.coords.longitude);
+  //   });
+  // }
 
   render() {
     const genericSection01Header = {
@@ -79,14 +79,12 @@ class Hospitals extends React.Component {
 
           <br />
           <br />
-          <br />
-          <br />
 
-          <select value="Filters" style={{ float: "right", marginRight: 50 }}>
+          {/* <select value="Filters" style={{ float: "right", marginRight: 50 }}>
             <option>nearby</option>
             <option>price</option>
             <option>ventilators</option>
-          </select>
+          </select> */}
 
           <br />
           <br />

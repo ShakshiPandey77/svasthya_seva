@@ -8,12 +8,12 @@ const Logo = ({ className, ...props }) => {
 
   return (
     <div {...props} className={classes}>
-      <h1 className="m-0">
+      <h1 className="m-1">
         <Link to="/">
           <Image
             src={require("./../../../assets/images/sevalogo.png")}
-            alt="Spike"
-            width={60}
+            alt="Svasthya Seva"
+            width={80}
             height={40}
           />
         </Link>
