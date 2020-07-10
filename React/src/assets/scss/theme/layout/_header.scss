@@ -1,0 +1,13 @@
+.logoStyles {
+  position: relative;
+  top: 15px;
+  font-size: 30px;
+  left: -1px;
+}
+.logoStyles:hover {
+  font-size: 32px;
+}
+.alignTextLogo {
+  display: flex;
+  flex-direction: row;
+}
