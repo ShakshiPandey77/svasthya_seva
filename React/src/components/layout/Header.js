@@ -178,6 +178,19 @@ class Header extends React.Component {
                         navPosition && `header-nav-${navPosition}`
                       )}
                     >
+                      <li>
+                        <Link to="/helpline/" onClick={this.closeMenu}>
+                          Helpline
+                        </Link>
+                      </li>
+                    </ul>
+
+                    <ul
+                      className={classNames(
+                        "list-reset text-xxs",
+                        navPosition && `header-nav-${navPosition}`
+                      )}
+                    >
                       {/* <li>
                         <Link to="/information/" onClick={this.closeMenu}>
                           Awareness
