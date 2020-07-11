@@ -76,10 +76,12 @@ class Footer extends React.Component {
                   </ul>
                 </div> */}
                 <div className="footer-block">
-                  <div className="footer-block-title">State Wide Helpline</div>
+                  <div className="footer-block-title">
+                    Government Covid Mail-ID
+                  </div>
                   <ul className="list-reset mb-0">
                     <li>
-                      <a href="tel:104">104</a>
+                      <a href="mailto:ncov2019@gov.in">ncov2019@gov.in</a>
                     </li>
                     {/* <li>
                       <a href="https://cruip.com/">Dummy text used</a>
@@ -93,22 +95,10 @@ class Footer extends React.Component {
                   </ul>
                 </div>
                 <div className="footer-block">
-                  <div className="footer-block-title">
-                    Bangalore Urban Helpline
-                  </div>
+                  <div className="footer-block-title">State Wide Helpline</div>
                   <ul className="list-reset mb-0">
                     <li>
-                      <a href="tel:080-22967200">080-22967200</a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="footer-block">
-                  <div className="footer-block-title">
-                    Bangalore Rural Helpline
-                  </div>
-                  <ul className="list-reset mb-0">
-                    <li>
-                      <a href="tel:080-29781021">080-29781021</a>
+                      <a href="tel:104">104</a>
                     </li>
                   </ul>
                 </div>
