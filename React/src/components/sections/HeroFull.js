@@ -1,23 +1,22 @@
-import React from 'react';
-import classNames from 'classnames';
-import { SectionProps } from '../../utils/SectionProps';
-import Button from '../elements/Button';
+import React from "react";
+import classNames from "classnames";
+import { SectionProps } from "../../utils/SectionProps";
+import Button from "../elements/Button";
 
 const propTypes = {
-  ...SectionProps.types
-}
+  ...SectionProps.types,
+};
 
 const defaultProps = {
-  ...SectionProps.defaults
-}
+  ...SectionProps.defaults,
+};
 
 class HeroFull extends React.Component {
-
   render() {
     const {
       className,
       topOuterDivider,
-      bottomOuterDivider,      
+      bottomOuterDivider,
       topDivider,
       bottomDivider,
       hasBgColor,
@@ -26,27 +25,24 @@ class HeroFull extends React.Component {
     } = this.props;
 
     const outerClasses = classNames(
-      'hero section center-content',
-      topOuterDivider && 'has-top-divider',
-      bottomOuterDivider && 'has-bottom-divider',
-      hasBgColor && 'has-bg-color',
-      invertColor && 'invert-color',
+      "hero section center-content",
+      topOuterDivider && "has-top-divider",
+      bottomOuterDivider && "has-bottom-divider",
+      hasBgColor && "has-bg-color",
+      invertColor && "invert-color",
       className
     );
 
-    const innerClasses = classNames(
-      'hero-inner section-inner',
-      topDivider && 'has-top-divider',
-      bottomDivider && 'has-bottom-divider'
-    );
+    // const innerClasses = classNames(
+    //   "hero-inner section-inner",
+    //   topDivider && "has-top-divider",
+    //   bottomDivider && "has-bottom-divider"
+    // );
 
     return (
-      <section
-        {...props}
-        className={outerClasses}
-      >
+      <section {...props} className={outerClasses}>
         <div className="container-sm">
-          <div className={innerClasses}>
+          {/* <div className={innerClasses}>
             <div className="hero-content" style={inlineStyle()}>
               <h1 className="mt-0 mb-16 reveal-from-top">
                 Landing template for startups
@@ -62,7 +58,7 @@ class HeroFull extends React.Component {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     );
@@ -71,8 +67,8 @@ class HeroFull extends React.Component {
 
 // inline style
 const inlineCss = {
-  marginBottom: '40px'
-}
+  marginBottom: "40px",
+};
 
 const inlineStyle = function () {
   if (window.innerWidth > 641) {

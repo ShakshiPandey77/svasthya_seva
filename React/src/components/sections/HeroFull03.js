@@ -5,23 +5,23 @@ import Image from "../elements/Image";
 import Modal from "../elements/Modal";
 
 const propTypes = {
-  ...SectionProps.types
+  ...SectionProps.types,
 };
 
 const defaultProps = {
-  ...SectionProps.defaults
+  ...SectionProps.defaults,
 };
 
 class HeroFull extends React.Component {
   state = {
-    videoModalActive: false
+    videoModalActive: false,
   };
-  openModal = e => {
+  openModal = (e) => {
     e.preventDefault();
     this.setState({ videoModalActive: true });
   };
 
-  closeModal = e => {
+  closeModal = (e) => {
     e.preventDefault();
     this.setState({ videoModalActive: false });
   };
@@ -65,28 +65,7 @@ class HeroFull extends React.Component {
             <div
               className="hero-figure illustration-element-01 reveal-from-bottom"
               data-reveal-delay="150"
-            >
-              {/* <a
-                data-video="https://player.vimeo.com/video/174002812"
-                href="#0"
-                aria-controls="video-modal"
-                onClick={this.openModal}
-              >
-                <Image
-                  className="has-shadow"
-                  src={require('./../../assets/images/video-placeholder.png')}
-                  alt="Video"
-                  width={896}
-                  height={502} />
-              </a> */}
-            </div>
-            <Modal
-              id="video-modal"
-              show={this.state.videoModalActive}
-              handleClose={this.closeModal}
-              video="https://player.vimeo.com/video/174002812"
-              videoTag="iframe"
-            />
+            ></div>
           </div>
         </div>
       </section>

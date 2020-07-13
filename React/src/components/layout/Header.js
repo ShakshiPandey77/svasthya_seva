@@ -10,7 +10,7 @@ const propTypes = {
   hideNav: PropTypes.bool,
   hideSignin: PropTypes.bool,
   bottomOuterDivider: PropTypes.bool,
-  bottomDivider: PropTypes.bool
+  bottomDivider: PropTypes.bool,
 };
 
 const defaultProps = {
@@ -19,12 +19,12 @@ const defaultProps = {
   hideNav: false,
   hideSignin: false,
   bottomOuterDivider: false,
-  bottomDivider: false
+  bottomDivider: false,
 };
 
 class Header extends React.Component {
   state = {
-    isActive: false
+    isActive: false,
   };
 
   nav = React.createRef();
@@ -54,11 +54,11 @@ class Header extends React.Component {
     this.setState({ isActive: false });
   };
 
-  keyPress = e => {
+  keyPress = (e) => {
     this.state.isActive && e.keyCode === 27 && this.closeMenu();
   };
 
-  clickOutside = e => {
+  clickOutside = (e) => {
     if (!this.nav.current) return;
     if (
       !this.state.isActive ||
@@ -96,10 +96,15 @@ class Header extends React.Component {
               bottomDivider && "has-bottom-divider"
             )}
           >
-            <Logo />
-            <Link to="/">
-              <h5>Svasthya Seva</h5>
+            <Link
+              to="/"
+              className="alignTextLogo"
+              style={{ textDecoration: "none" }}
+            >
+              <Logo />
+              <span className="logoStyles  ">Svasthya Seva</span>
             </Link>
+
             {!hideNav && (
               <React.Fragment>
                 <button
@@ -120,19 +125,6 @@ class Header extends React.Component {
                   )}
                 >
                   <div className="header-nav-inner">
-                    {/* <ul
-                      className={classNames(
-                        "list-reset text-xxs",
-                        navPosition && `header-nav-${navPosition}`
-                      )}
-                    >
-                      <li>
-                        <Link to="/helpline/" onClick={this.closeMenu}>
-                          Helpline
-                        </Link>
-                      </li>
-                    </ul> */}
-
                     <ul
                       className={classNames(
                         "list-reset text-xxs",
@@ -154,7 +146,7 @@ class Header extends React.Component {
                     >
                       <li>
                         <Link to="/quarantineCenter/" onClick={this.closeMenu}>
-                          Quarantine Center
+                          Quarantine Centers
                         </Link>
                       </li>
                     </ul>
@@ -167,11 +159,23 @@ class Header extends React.Component {
                     >
                       <li>
                         <Link to="/testingCenter/" onClick={this.closeMenu}>
-                          Testing Center
+                          Testing Centers
                         </Link>
                       </li>
                     </ul>
 
+                    <ul
+                      className={classNames(
+                        "list-reset text-xxs",
+                        navPosition && `header-nav-${navPosition}`
+                      )}
+                    >
+                      <li>
+                        <Link to="/information/" onClick={this.closeMenu}>
+                          Awareness
+                        </Link>
+                      </li>
+                    </ul>
                     <ul
                       className={classNames(
                         "list-reset text-xxs",
@@ -191,24 +195,11 @@ class Header extends React.Component {
                         navPosition && `header-nav-${navPosition}`
                       )}
                     >
-                      {/* <li>
-                        <Link to="/information/" onClick={this.closeMenu}>
-                          Awareness
-                        </Link>
-                      </li> */}
-                    </ul>
-
-                    <ul
-                      className={classNames(
-                        "list-reset text-xxs",
-                        navPosition && `header-nav-${navPosition}`
-                      )}
-                    >
-                      {/* <li>
+                      <li>
                         <Link to="/aboutus/" onClick={this.closeMenu}>
                           About us
                         </Link>
-                      </li> */}
+                      </li>
                     </ul>
                   </div>
                 </nav>
