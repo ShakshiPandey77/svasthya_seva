@@ -59,12 +59,12 @@ class HeroFull extends React.Component {
           <div className={innerClasses}>
             <div className="hero-content">
               <div className="container-xs">
-                <h1 className="m-1 reveal-from-top">COVID-19 HOSPITAL</h1>
+                <h1 className="m-0 reveal-from-top">COVID-19 HOSPITALS</h1>
               </div>
             </div>
             <div
               className="hero-figure illustration-element-01 reveal-from-bottom"
-              data-reveal-delay="150"
+              data-reveal-delay="100"
             ></div>
           </div>
         </div>

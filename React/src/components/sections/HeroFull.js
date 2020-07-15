@@ -33,32 +33,35 @@ class HeroFull extends React.Component {
       className
     );
 
-    // const innerClasses = classNames(
-    //   "hero-inner section-inner",
-    //   topDivider && "has-top-divider",
-    //   bottomDivider && "has-bottom-divider"
-    // );
+    const innerClasses = classNames(
+      "hero-inner section-inner",
+      topDivider && "has-top-divider",
+      bottomDivider && "has-bottom-divider"
+    );
 
     return (
       <section {...props} className={outerClasses}>
         <div className="container-sm">
-          {/* <div className={innerClasses}>
+          <div className={innerClasses}>
             <div className="hero-content" style={inlineStyle()}>
-              <h1 className="mt-0 mb-16 reveal-from-top">
-                Landing template for startups
-              </h1>
+              <h1 className="mt-0 mb-16 reveal-from-top">Svasthya Seva</h1>
               <div className="container-xs">
-                <p className="m-0 mb-32 reveal-from-top" data-reveal-delay="150">
-                  Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
+                <p
+                  className="m-0 mb-32 reveal-from-top"
+                  data-reveal-delay="150"
+                >
+                  Your hunt to find near by covid hospitals with covid bed
+                  availability ends here.
                 </p>
-                <div className="reveal-from-top" data-reveal-delay="300">
-                  <Button tag="a" color="primary" href="https://cruip.com/">
+
+                {/* <div className="reveal-from-top" data-reveal-delay="300">
+                  {/* <Button tag="a" color="primary" href="https://cruip.com/">
                     Pricing and plans
-                  </Button>
-                </div>
+                  </Button> */}
+                {/* </div> */}
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </section>
     );

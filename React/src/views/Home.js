@@ -12,9 +12,9 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <HeroFull hasBgColor invertColor />
+        <HeroFull hasBgColor invertColor className="illustration-section-01" />
 
-        <FeaturesSplit invertMobile topDivider imageFill />
+        <FeaturesSplit invertMobile imageFill />
         <Statistics />
       </React.Fragment>
     );

@@ -2,12 +2,37 @@ import React from "react";
 
 // import sections
 import HeroFull from "../components/sections/HeroFull03";
-import HospitalTable from "../components/sections/HospitalTable";
-
+import HospitalTable from "../components/sections/temp";
+import axios from "axios";
+// import HospitalTable from "../components/sections/HospitalTable";
 class Hospitals extends React.Component {
-  state = {
-    demoModalActive: false,
-  };
+  constructor() {
+    super();
+    this.state = {
+      data: [],
+    };
+  }
+
+  componentDidMount() {
+    // this.setState({ loading: true });
+    axios
+      .get(
+        `https://iphy6zyd24.execute-api.ap-south-1.amazonaws.com/test1/hospital`
+      )
+      .then((res) => {
+        const data = res.data;
+        this.setState({
+          data,
+          currentPageNumber: res.currentPageNumber,
+          totalItems: res.totalItems,
+          itemsPerPage: res.itemsPerPage,
+        });
+
+        console.log("data");
+        console.log(data);
+      });
+    // this.setState({ loading: false });
+  }
 
   openModal = (e) => {
     e.preventDefault();
@@ -27,37 +52,21 @@ class Hospitals extends React.Component {
   // }
 
   render() {
-    const genericSection01Header = {
-      title: "Buttons - Lorem ipsum is placeholder text commonly used.",
-    };
-
-    const genericSection02Header = {
-      title: "Input forms - Lorem ipsum is placeholder text commonly used.",
-    };
-
-    const genericSection03Header = {
-      title: "Modal - Lorem ipsum is placeholder text commonly used.",
-    };
-
-    const genericSection04Header = {
-      title: "FAQ - Lorem ipsum is placeholder text commonly used.",
-    };
-
+    const rows = this.state.data;
+    console.log(rows);
     return (
       <React.Fragment>
         {
           <HeroFull
             hasBgColor
             invertColor
-            className="has-bg-color-cut illustration-section-01"
+            className="has-bg-color-cut  illustration-section-01"
           />
         }
         <div>
           <br />
-          <br />
-          <br />
-          <br />
-          <HospitalTable />
+
+          <HospitalTable data={rows} />
         </div>
       </React.Fragment>
     );

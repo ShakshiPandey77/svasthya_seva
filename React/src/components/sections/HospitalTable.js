@@ -2,8 +2,8 @@ import React from "react";
 import { Table, Thead, Tbody, Tr, Th, Td } from "react-super-responsive-table";
 import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
 import axios from "axios";
-import TablePagination from "@material-ui/core/TablePagination";
-import { makeStyles, withTheme } from "@material-ui/core/styles";
+import { Pagination } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default class table extends React.Component {
   constructor() {
@@ -12,6 +12,9 @@ export default class table extends React.Component {
       data: [],
       loading: false,
       sort: "none",
+      totalItems: 60,
+      itemsPerPage: 10,
+      currentPageNumber: 1,
     };
   }
 
@@ -23,23 +26,24 @@ export default class table extends React.Component {
       )
       .then((res) => {
         const data = res.data;
-        this.setState({ data });
+        this.setState({
+          data,
+          currentPageNumber: res.currentPageNumber,
+          totalItems: res.totalItems,
+          itemsPerPage: res.itemsPerPage,
+        });
+
         // console.log("data");
         // console.log(data);
       });
     this.setState({ loading: false });
   }
 
+  handleSelect(number) {
+    console.log("handle select", number);
+  }
   render() {
     const rows = this.state.data;
-
-    // console.log("rows");
-    // console.log(rows);
-    // const{rowsList,sortType}
-    // const sorted=rows.sort((a,b)=>{
-    //   const isReversed=(sortType==='des')?-1:1;
-    //   return isReversed*a.covidBeds.localeCompare(b.covidBeds)
-    // })
     return (
       <div style={{ position: "relative", margin: "20px" }}>
         <Table>

@@ -96,14 +96,14 @@ class Header extends React.Component {
               bottomDivider && "has-bottom-divider"
             )}
           >
-            <Link
+            {/* <Link
               to="/"
               className="alignTextLogo"
               style={{ textDecoration: "none" }}
-            >
-              <Logo />
-              <span className="logoStyles  ">Svasthya Seva</span>
-            </Link>
+            > */}
+            <Logo />
+            {/* <span className="logoStyles  ">Svasthya Seva</span> */}
+            {/* </Link> */}
 
             {!hideNav && (
               <React.Fragment>
@@ -125,6 +125,19 @@ class Header extends React.Component {
                   )}
                 >
                   <div className="header-nav-inner">
+                    <ul
+                      className={classNames(
+                        "list-reset text-xxs",
+                        navPosition && `header-nav-${navPosition}`
+                      )}
+                    >
+                      <li>
+                        <Link to="/" onClick={this.closeMenu}>
+                          Home
+                        </Link>
+                      </li>
+                    </ul>
+
                     <ul
                       className={classNames(
                         "list-reset text-xxs",

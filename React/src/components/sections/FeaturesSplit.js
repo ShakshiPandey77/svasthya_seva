@@ -97,21 +97,21 @@ class FeaturesSplit extends React.Component {
                 </div>
                 <div
                   className={classNames(
-                    "split-item-image center-content-mobile illustration-element-02 reveal-from-right",
+                    "split-item-image center-content-mobile reveal-from-right",
                     imageFill && "split-item-image-fill"
                   )}
                   data-reveal-container=".split-item"
                   data-reveal-delay="200"
                 >
                   <Image
-                    src={require("./../../assets/images/features-split-image.svg")}
+                    src={require("./../../assets/images/hospital.jpeg")}
                     alt="Features split 01"
                     width={528}
                     height={396}
                   />
                   <div style={imgStyle}>
                     <Image
-                      src={require("./../../assets/images/features-split-top-01.png")}
+                      src={""}
                       alt="Features split top 01"
                       width={654}
                       height={522}
@@ -119,7 +119,8 @@ class FeaturesSplit extends React.Component {
                   </div>
                 </div>
               </div>
-
+              <br />
+              <br />
               <div className="split-item">
                 <div className="split-item-content center-content-mobile">
                   <div className="mt-0 mb-20  fw-700  fs-30 reveal-from-left">
@@ -145,31 +146,29 @@ class FeaturesSplit extends React.Component {
                     Know more
                   </Link>
                 </div>
+
                 <div
                   className={classNames(
-                    "split-item-image center-content-mobile illustration-element-03 reveal-from-left",
+                    "split-item-image center-content-mobile reveal-from-left",
                     imageFill && "split-item-image-fill"
                   )}
                   data-reveal-container=".split-item"
                   data-reveal-delay="200"
                 >
-                  <Image
-                    src={require("./../../assets/images/features-split-image.svg")}
-                    alt="Features split 02"
-                    width={528}
-                    height={396}
-                  />
+                  <Image src={""} alt="" width={528} height={396} />
+
                   <div style={imgStyle}>
                     <Image
-                      src={require("./../../assets/images/features-split-top-02.png")}
-                      alt="Features split top 02"
+                      src={require("./../../assets/images/quarantine.jpeg")}
+                      alt=""
                       width={654}
                       height={521}
                     />
                   </div>
                 </div>
               </div>
-
+              <br />
+              <br />
               <div className="split-item">
                 <div className="split-item-content center-content-mobile">
                   <div className="mt-0 mb-20  fw-700  fs-30 reveal-from-left">
@@ -212,7 +211,7 @@ class FeaturesSplit extends React.Component {
                   />
                   <div style={imgStyle}>
                     <Image
-                      src={require("./../../assets/images/features-split-top-03.png")}
+                      src={require("./../../assets/images/testing.jpeg")}
                       alt="Features split top 03"
                       width={654}
                       height={436}
