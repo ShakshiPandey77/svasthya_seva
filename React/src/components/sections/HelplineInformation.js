@@ -169,7 +169,7 @@ class Pricing extends React.Component {
                         <span className="pricing-item-price-amount h1">
                           {this.getPricingData(this.state.priceOutput.plan1, 1)}
                         </span> */}
-                        <span className="h5">Covid Control Room</span>
+                        <span className="h5">State Covid Control Room</span>
                       </div>
                       {/* <div className="text-color-low text-xs">
                         per month, billed {this.getPricingData(this.state.priceOutput.plan1, 2)}
@@ -342,7 +342,9 @@ class Pricing extends React.Component {
                         {/* <span className="pricing-item-price-amount h1">
                           {this.getPricingData(this.state.priceOutput.plan3, 1)}
                         </span> */}
-                        <span className="h5">Bangalore Urban</span>
+                        <span className="h5">
+                          Bangalore Urban Covid Control Room
+                        </span>
                       </div>
                       {/* <div className="text-color-low text-xs">
                         per month, billed {this.getPricingData(this.state.priceOutput.plan3, 2)}
@@ -390,7 +392,9 @@ class Pricing extends React.Component {
                         {/* <span className="pricing-item-price-amount h1">
                           {this.getPricingData(this.state.priceOutput.plan3, 1)}
                         </span> */}
-                        <span className="h5">Bangalore Rural</span>
+                        <span className="h5">
+                          Bangalore Rural Covid Control Room
+                        </span>
                       </div>
                       {/* <div className="text-color-low text-xs">
                         per month, billed {this.getPricingData(this.state.priceOutput.plan3, 2)}
@@ -432,7 +436,9 @@ class Pricing extends React.Component {
                         {/* <span className="pricing-item-price-amount h1">
                           {this.getPricingData(this.state.priceOutput.plan3, 1)}
                         </span> */}
-                        <span className="h5">Mysuru</span>
+                        <span className="h5">
+                          Denial of admission to hospitals
+                        </span>
                       </div>
                       {/* <div className="text-color-low text-xs">
                         per month, billed {this.getPricingData(this.state.priceOutput.plan3, 2)}
@@ -443,23 +449,18 @@ class Pricing extends React.Component {
                         What’s included
                       </div> */}
                       <ul className="pricing-item-features-list list-reset text-xs mb-32">
-                        0821-2423800
+                        1912
                       </ul>
-                      <Button
-                        tag="a"
-                        color="primary"
-                        wide
-                        href="tel:0821-2423800"
-                      >
+                      <Button tag="a" color="primary" wide href="tel:1912">
                         Dial
                       </Button>
                       <br />
-                      <ul className="pricing-item-features-list list-reset text-xs mb-32">
+                      {/* <ul className="pricing-item-features-list list-reset text-xs mb-32">
                         0821-1077
                       </ul>
                       <Button tag="a" color="primary" wide href="tel:0821-1077">
                         Dial
-                      </Button>
+                      </Button> */}
                     </div>
                   </div>
                 </div>
