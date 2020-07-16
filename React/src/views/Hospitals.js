@@ -4,23 +4,43 @@ import React from "react";
 import HeroFull from "../components/sections/HeroFull03";
 import HospitalTable from "../components/sections/temp";
 import axios from "axios";
+const haversine = require("haversine")
 // import HospitalTable from "../components/sections/HospitalTable";
 class Hospitals extends React.Component {
   constructor() {
     super();
     this.state = {
       data: [],
+      latitude: 0,
+      longitude: 0
     };
   }
 
   componentDidMount() {
     // this.setState({ loading: true });
+      navigator.geolocation.getCurrentPosition(function(position) {
+        var latlon = String(position.coords.latitude + "," + position.coords.longitude);
+        // this.state.latitude = position.coords.latitude;
+        // this.state.longitude = position.coords.longitude;
+        
+        console.log("Latitude is :",latlon.split(",")[0]);
+        console.log("Longitude is :", latlon.split(",")[1]);
+      });
+    
+      console.log(latlon)
+    
     axios
       .get(
         `https://iphy6zyd24.execute-api.ap-south-1.amazonaws.com/test1/hospital`
       )
       .then((res) => {
-        const data = res.data;
+        let data = res.data;
+        for (var i = 0; i < data.length; i++){
+
+          data[i]["distance"] = haversine({ latitude: this.state.latitude, longitude: this.state.longitude },
+          {latitude: Number(data[i].latitude),
+            longitude: Number(data[i].longitude)})
+        }
         this.setState({
           data,
           currentPageNumber: res.currentPageNumber,
