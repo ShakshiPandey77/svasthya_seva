@@ -202,7 +202,7 @@ class Header extends React.Component {
                       </li>
                     </ul>
 
-                    <ul
+                    {/* <ul
                       className={classNames(
                         "list-reset text-xxs",
                         navPosition && `header-nav-${navPosition}`
@@ -213,7 +213,7 @@ class Header extends React.Component {
                           About us
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </div>
                 </nav>
               </React.Fragment>
