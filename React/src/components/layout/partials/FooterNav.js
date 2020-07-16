@@ -12,7 +12,7 @@ const FooterNav = ({ className, ...props }) => {
           <Link to="/Aboutus">About us</Link>
         </li> */}
         <li>
-          <a href="mailto:svasthyaseva@gmail.com">Contact</a>
+          <a href="mailto:svasthyaseva@gmail.com">Contact Us</a>
         </li>
         {/* <li>
           <Link to="/faqs/">FAQ's</Link>

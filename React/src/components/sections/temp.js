@@ -14,8 +14,8 @@ import TableSortLabel from "@material-ui/core/TableSortLabel";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
-// import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
-// import "bootstrap/dist/css/bootstrap.min.css";
+//import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
+//import "bootstrap/dist/css/bootstrap.min.css";
 //import Checkbox from "@material-ui/core/Checkbox";
 import IconButton from "@material-ui/core/IconButton";
 import Tooltip from "@material-ui/core/Tooltip";
@@ -56,19 +56,19 @@ const headCells = [
     id: "hospital",
     numeric: false,
     disablePadding: true,
-    label: "Hospital Name",
+    label: "HOSPITAL NAME",
   },
   {
     id: "covidBeds",
-    numeric: false,
+    numeric: true,
     disablePadding: true,
-    label: "Covid Beds",
+    label: "COVID BEDS",
   },
   {
     id: "covidVentillator",
-    numeric: false,
-    disablePadding: true,
-    label: "Covid Ventillator",
+    numeric: true,
+    disablePadding: false,
+    label: "COVID VENTILLATORS",
   },
   {
     id: "distance",
@@ -78,15 +78,15 @@ const headCells = [
   },
   {
     id: "address",
-    numeric: true,
+    numeric: false,
     disablePadding: false,
-    label: "Address",
+    label: "ADDRESS",
   },
   {
     id: "contact",
     numeric: true,
     disablePadding: false,
-    label: "Contact",
+    label: "CONTACT",
   },
 ];
 
@@ -259,7 +259,7 @@ export default function EnhancedTable(props) {
   console.log(rows);
   const classes = useStyles();
   const [order, setOrder] = React.useState("asc");
-  const [orderBy, setOrderBy] = React.useState("name");
+  const [orderBy, setOrderBy] = React.useState("covidBeds");
   const [selected, setSelected] = React.useState([]);
   const [page, setPage] = React.useState(0);
   const [dense, setDense] = React.useState(false);

@@ -9,13 +9,13 @@ import Button from "../elements/Button";
 const propTypes = {
   ...SectionTilesProps.types,
   pricingSwitcher: PropTypes.bool,
-  pricingSlider: PropTypes.bool,
+  pricingSlider: PropTypes.bool
 };
 
 const defaultProps = {
   ...SectionTilesProps.defaults,
   pricingSwitcher: false,
-  pricingSlider: false,
+  pricingSlider: false
 };
 
 class Pricing extends React.Component {
@@ -39,16 +39,16 @@ class Pricing extends React.Component {
     }
   }
 
-  handlePricingSwitch = (e) => {
+  handlePricingSwitch = e => {
     this.setState({ priceChangerValue: e.target.checked ? "1" : "0" });
   };
 
-  handlePricingSlide = (e) => {
+  handlePricingSlide = e => {
     this.setState({ priceChangerValue: e.target.value });
     this.handleSliderValuePosition(e.target);
   };
 
-  handleSliderValuePosition = (input) => {
+  handleSliderValuePosition = input => {
     const multiplier = input.value / input.max;
     const thumbOffset = this.thumbSize * multiplier;
     const priceInputOffset =
@@ -97,7 +97,7 @@ class Pricing extends React.Component {
 
     const sectionHeader = {
       title: " ",
-      paragraph: "",
+      paragraph: ""
     };
 
     return (
@@ -140,9 +140,15 @@ class Pricing extends React.Component {
                 <div className="tiles-item-inner has-shadow">
                   <div className="pricing-item-content">
                     <div className="pricing-item-header pb-16 mb-24">
-                      <div className="pricing-item-price">
-                        <span className="h5">Covid Control Room</span>
-                      </div>
+                      {/* <div className="pricing-item-price"> */}
+                        {/* <span className="pricing-item-price-currency h2">
+                          {this.getPricingData(this.state.priceOutput.plan1, 0)}
+                        </span>
+                        <span className="pricing-item-price-amount h1">
+                          {this.getPricingData(this.state.priceOutput.plan1, 1)}
+                        </span> */}
+                        <span className="h5">State Covid Control Room</span>
+                      {/* </div> */}
                     </div>
                     <div className="pricing-item-features mb-40">
                       <ul className="pricing-item-features-list list-reset text-xs mb-32">
@@ -184,9 +190,7 @@ class Pricing extends React.Component {
                   <div className="pricing-item-content">
                     <div className="pricing-item-header pb-16 mb-24">
                       <div className="pricing-item-price">
-                        <span className="h5">
-                          Food, civil suppliers and BBMP
-                        </span>
+                        <span className="h5">Food and civil suppliers</span>
                       </div>
                     </div>
                     <div className="pricing-item-features mb-40">
@@ -205,18 +209,6 @@ class Pricing extends React.Component {
                         color="primary"
                         wide
                         href="tel:180-425-9339"
-                      >
-                        Dial
-                      </Button>
-                      <br />
-                      <ul className="pricing-item-features-list list-reset text-xs mb-32">
-                        BBMP: 080-22660000
-                      </ul>
-                      <Button
-                        tag="a"
-                        color="primary"
-                        wide
-                        href="tel:080-22660000"
                       >
                         Dial
                       </Button>
@@ -284,7 +276,9 @@ class Pricing extends React.Component {
                         {/* <span className="pricing-item-price-amount h1">
                           {this.getPricingData(this.state.priceOutput.plan3, 1)}
                         </span> */}
-                        <span className="h5">Bangalore Urban</span>
+                        <span className="h5">
+                          Bangalore Urban Covid Control Room
+                        </span>
                       </div>
                       {/* <div className="text-color-low text-xs">
                         per month, billed {this.getPricingData(this.state.priceOutput.plan3, 2)}
@@ -332,7 +326,9 @@ class Pricing extends React.Component {
                         {/* <span className="pricing-item-price-amount h1">
                           {this.getPricingData(this.state.priceOutput.plan3, 1)}
                         </span> */}
-                        <span className="h5">Bangalore Rural</span>
+                        <span className="h5">
+                          Bangalore Rural Covid Control Room
+                        </span>
                       </div>
                       {/* <div className="text-color-low text-xs">
                         per month, billed {this.getPricingData(this.state.priceOutput.plan3, 2)}
@@ -374,7 +370,9 @@ class Pricing extends React.Component {
                         {/* <span className="pricing-item-price-amount h1">
                           {this.getPricingData(this.state.priceOutput.plan3, 1)}
                         </span> */}
-                        <span className="h5">Mysuru</span>
+                        <span className="h5">
+                          Denial of admission to hospitals and BBMP
+                        </span>
                       </div>
                       {/* <div className="text-color-low text-xs">
                         per month, billed {this.getPricingData(this.state.priceOutput.plan3, 2)}
@@ -385,23 +383,30 @@ class Pricing extends React.Component {
                         What’s included
                       </div> */}
                       <ul className="pricing-item-features-list list-reset text-xs mb-32">
-                        0821-2423800
+                        1912
+                      </ul>
+                      <Button tag="a" color="primary" wide href="tel:1912">
+                        Dial
+                      </Button>
+                      <br />
+                      <ul className="pricing-item-features-list list-reset text-xs mb-32">
+                        BBMP: 080-22660000
                       </ul>
                       <Button
                         tag="a"
                         color="primary"
                         wide
-                        href="tel:0821-2423800"
+                        href="tel:080-22660000"
                       >
                         Dial
                       </Button>
                       <br />
-                      <ul className="pricing-item-features-list list-reset text-xs mb-32">
+                      {/* <ul className="pricing-item-features-list list-reset text-xs mb-32">
                         0821-1077
                       </ul>
                       <Button tag="a" color="primary" wide href="tel:0821-1077">
                         Dial
-                      </Button>
+                      </Button> */}
                     </div>
                   </div>
                 </div>
