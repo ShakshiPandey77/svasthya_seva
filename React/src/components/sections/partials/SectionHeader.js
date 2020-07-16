@@ -5,15 +5,15 @@ import classNames from "classnames";
 const propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string,
-    paragraph: PropTypes.string
+    paragraph: PropTypes.string,
   }).isRequired,
   children: PropTypes.node,
-  tag: PropTypes.oneOf(["h1", "h2", "h3"])
+  tag: PropTypes.oneOf(["h1", "h2", "h3"]),
 };
 
 const defaultProps = {
   children: null,
-  tag: "h2"
+  tag: "h2",
 };
 
 class SectionHeader extends React.Component {
@@ -33,7 +33,7 @@ class SectionHeader extends React.Component {
               {data.title && (
                 <Component
                   className={classNames(
-                    "mt-0",
+                    "mt-0 ff",
                     data.paragraph ? "mb-16" : "mb-0"
                   )}
                 >

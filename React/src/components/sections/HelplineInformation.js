@@ -9,38 +9,16 @@ import Button from "../elements/Button";
 const propTypes = {
   ...SectionTilesProps.types,
   pricingSwitcher: PropTypes.bool,
-  pricingSlider: PropTypes.bool
+  pricingSlider: PropTypes.bool,
 };
 
 const defaultProps = {
   ...SectionTilesProps.defaults,
   pricingSwitcher: false,
-  pricingSlider: false
+  pricingSlider: false,
 };
 
 class Pricing extends React.Component {
-  // state = {
-  //   priceChangerValue: "1",
-  //   priceInput: {
-  //     // 0: "1,000",
-  //     // 1: "1,250"
-  //   },
-  //   priceOutput: {
-  //     plan1: {
-  //       0: ["$", "49", "monthly"],
-  //       1: ["$", "39", "annually"]
-  //     },
-  //     plan2: {
-  //       0: ["$", "69", "monthly"],
-  //       1: ["$", "59", "annually"]
-  //     },
-  //     plan3: {
-  //       0: ["$", "89", "monthly"],
-  //       1: ["$", "79", "annually"]
-  //     }
-  //   }
-  // }
-
   slider = React.createRef();
   sliderValue = React.createRef();
 
@@ -61,16 +39,16 @@ class Pricing extends React.Component {
     }
   }
 
-  handlePricingSwitch = e => {
+  handlePricingSwitch = (e) => {
     this.setState({ priceChangerValue: e.target.checked ? "1" : "0" });
   };
 
-  handlePricingSlide = e => {
+  handlePricingSlide = (e) => {
     this.setState({ priceChangerValue: e.target.value });
     this.handleSliderValuePosition(e.target);
   };
 
-  handleSliderValuePosition = input => {
+  handleSliderValuePosition = (input) => {
     const multiplier = input.value / input.max;
     const thumbOffset = this.thumbSize * multiplier;
     const priceInputOffset =
@@ -119,7 +97,7 @@ class Pricing extends React.Component {
 
     const sectionHeader = {
       title: " ",
-      paragraph: ""
+      paragraph: "",
     };
 
     return (
@@ -171,18 +149,9 @@ class Pricing extends React.Component {
                         </span> */}
                         <span className="h5">State Covid Control Room</span>
                       </div>
-                      {/* <div className="text-color-low text-xs">
-                        per month, billed {this.getPricingData(this.state.priceOutput.plan1, 2)}
-                      </div> */}
                     </div>
                     <div className="pricing-item-features mb-40">
-                      {/* <div className="pricing-item-features-title fw-500 text-xs text-color-mid mb-24">
-                        What’s included
-                      </div> */}
                       <ul className="pricing-item-features-list list-reset text-xs mb-32">
-                        {/* <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li> */}
                         104
                       </ul>
                       <Button tag="a" color="primary" wide href="tel:104">
@@ -190,9 +159,6 @@ class Pricing extends React.Component {
                       </Button>
                       <br />
                       <ul className="pricing-item-features-list list-reset text-xs mb-32">
-                        {/* <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li> */}
                         1075
                       </ul>
                       <Button tag="a" color="primary" wide href="tel:1075">
@@ -200,9 +166,6 @@ class Pricing extends React.Component {
                       </Button>
                       <br />
                       <ul className="pricing-item-features-list list-reset text-xs mb-32">
-                        {/* <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li>
-                        <li className="is-checked">Excepteur sint occaecat velit</li> */}
                         080-46848600
                       </ul>
                       <Button
@@ -215,9 +178,6 @@ class Pricing extends React.Component {
                       </Button>
                     </div>
                   </div>
-                  {/* <div className="pricing-item-cta mb-8">
-                    <Button tag="a" color="primary" wide href="http://cruip.com/">Start free trial</Button>
-                  </div> */}
                 </div>
               </div>
 
@@ -230,24 +190,12 @@ class Pricing extends React.Component {
                   <div className="pricing-item-content">
                     <div className="pricing-item-header pb-16 mb-24">
                       <div className="pricing-item-price">
-                        {/* <span className="pricing-item-price-currency h2">
-                          {this.getPricingData(this.state.priceOutput.plan2, 0)}
-                        </span>
-                        <span className="pricing-item-price-amount h1">
-                          {this.getPricingData(this.state.priceOutput.plan2, 1)}
-                        </span> */}
                         <span className="h5">
                           Food, civil suppliers and BBMP
                         </span>
                       </div>
-                      {/* <div className="text-color-low text-xs">
-                        per month, billed {this.getPricingData(this.state.priceOutput.plan2, 2)}
-                      </div> */}
                     </div>
                     <div className="pricing-item-features mb-40">
-                      {/* <div className="pricing-item-features-title fw-500 text-xs text-color-mid mb-24">
-                        What’s included
-                      </div> */}
                       <ul className="pricing-item-features-list list-reset text-xs mb-32">
                         1967
                       </ul>

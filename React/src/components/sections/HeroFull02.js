@@ -5,23 +5,23 @@ import Image from "../elements/Image";
 import Modal from "../elements/Modal";
 
 const propTypes = {
-  ...SectionProps.types
+  ...SectionProps.types,
 };
 
 const defaultProps = {
-  ...SectionProps.defaults
+  ...SectionProps.defaults,
 };
 
 class HeroFull extends React.Component {
   state = {
-    videoModalActive: false
+    videoModalActive: false,
   };
-  openModal = e => {
+  openModal = (e) => {
     e.preventDefault();
     this.setState({ videoModalActive: true });
   };
 
-  closeModal = e => {
+  closeModal = (e) => {
     e.preventDefault();
     this.setState({ videoModalActive: false });
   };
@@ -80,13 +80,13 @@ class HeroFull extends React.Component {
                   height={502} />
               </a> */}
             </div>
-            <Modal
+            {/* <Modal
               id="video-modal"
               show={this.state.videoModalActive}
               handleClose={this.closeModal}
               video="https://player.vimeo.com/video/174002812"
               videoTag="iframe"
-            />
+            /> */}
           </div>
         </div>
       </section>
