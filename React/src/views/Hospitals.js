@@ -11,23 +11,31 @@ class Hospitals extends React.Component {
     super();
     this.state = {
       data: [],
-      latitude: 0,
-      longitude: 0
+        latitude: 0,
+        longitude: 0
     };
   }
-
+  
   componentDidMount() {
     // this.setState({ loading: true });
+    
       navigator.geolocation.getCurrentPosition(function(position) {
         var latlon = String(position.coords.latitude + "," + position.coords.longitude);
+        // this.setState(
+        //   {
+        //     latitude: position.coords.latitude,
+        //     longitude: position.coords.longitude
+        //   }
+        // )
+       
         // this.state.latitude = position.coords.latitude;
         // this.state.longitude = position.coords.longitude;
         
         console.log("Latitude is :",latlon.split(",")[0]);
         console.log("Longitude is :", latlon.split(",")[1]);
       });
-    
-      console.log(latlon)
+     
+      console.log(this.state.latitude)
     
     axios
       .get(
@@ -37,9 +45,9 @@ class Hospitals extends React.Component {
         let data = res.data;
         for (var i = 0; i < data.length; i++){
 
-          data[i]["distance"] = haversine({ latitude: this.state.latitude, longitude: this.state.longitude },
+          data[i]["distance"] = Math.round(haversine({ latitude: this.state.latitude, longitude: this.state.longitude },
           {latitude: Number(data[i].latitude),
-            longitude: Number(data[i].longitude)})
+            longitude: Number(data[i].longitude)})*100)/100
         }
         this.setState({
           data,
@@ -73,6 +81,7 @@ class Hospitals extends React.Component {
 
   render() {
     const rows = this.state.data;
+    console.log("rows")
     console.log(rows);
     return (
       <React.Fragment>

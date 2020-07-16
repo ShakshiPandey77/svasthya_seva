@@ -71,6 +71,12 @@ const headCells = [
     label: "Covid Ventillator",
   },
   {
+    id: "distance",
+    numeric: false,
+    disablePadding: true,
+    label: "Distance (Kms)",
+  },
+  {
     id: "address",
     numeric: true,
     disablePadding: false,
@@ -377,6 +383,15 @@ export default function EnhancedTable(props) {
                         align="left"
                       >
                         {row.covidVentillator}
+                      </TableCell>
+                      <TableCell
+                        component="th"
+                        id={labelId}
+                        scope="row"
+                        padding="none"
+                        align="left"
+                      >
+                        {row.distance}
                       </TableCell>
 
                       <TableCell align="left">{row.address}</TableCell>
