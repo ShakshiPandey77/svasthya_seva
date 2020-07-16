@@ -239,77 +239,77 @@ import { textAlign } from "@material-ui/system";
 
 //export default TestingCenter;
 
-function createData(name, address, contact) {
-  return { name, address, contact };
-}
+// function createData(name, address, contact) {
+//   return { name, address, contact };
+// }
 
-const rows = [
-  createData(
-    "Command Hospital (Air Force)",
-    "Agaram Post, Old Airport Road, Bengaluru 560007",
-    "+91-8826115559, +91-8025369020"
-  ),
-  createData(
-    "Bangalore Medical College & Research Institute",
-    "Fort, Krishna Rajendra Rd, Bengaluru - 560002",
-    "+91-8026703320, +91-8026707174, +91-8026702322 "
-  ),
-  createData(
-    "National Institute of Virology, Bangalore Field Unit",
-    "Rajiv Gandhi Institute of Chest Disease Premises, Near NIMHANS, Someshwaranagar, 1st Main, Dharmaram College Post, Bangalore 560029",
-    "+91-8026654084, +91-8026654074	"
-  ),
-  createData(
-    "National Institute of Mental Health and NeuroSciences",
-    "Hosur Rd, near Bangalore Milk Dairy, Lakkasandra, Laljinagar, Wilson Garden, Bengaluru- 560029",
-    "91-8026995201 "
-  ),
-  createData(
-    "Indian Institute of Science, Bengaluru, (Department of Biochemistry, Centre for Infectious Disease Research)",
-    "CV Raman Avenue, Bangalore-560012",
-    "+91-8022933063"
-  ),
-  createData(
-    "Neuberg Anand Reference Laboratory",
-    "Anand Tower, #54, Bowring Hospital Road, Bengaluru - 560001",
-    "+91-804251974"
-  ),
-  createData(
-    "Cancyte Technologies Pvt Ltd",
-    "Sri Shankara Research Centre, Rangadore Memorial Hospital, No.9, 1st Cross, Shankarapuram, Bangalore - 560 004",
-    "+91-8041311877"
-  ),
-  createData(
-    "Sakra World Hospital Lab Services",
-    "Sy. No. 52/2 & 52/3, (Opp Intel, Outer Ring Road, Marathahalli) Devarabeesanahalli, Varthur Hobli, Bangalore- 560 103.",
-    "+91-8049694969"
-  ),
-  createData(
-    "Central Diagnostic Lab, Vydehi Institute of Medical Sciences and Research Centre",
-    "#82, E.P.I.P. Area, Whitefield, Bengaluru-560066",
-    "+91-8028412956,"
-  ),
-  createData(
-    "Lab Services, Apollo Hospitals",
-    "154/11, Opp IIM, Bannerghatta Road, Bengaluru-560076",
-    "+91-8026304370"
-  ),
-  createData(
-    "Syngene International Limited,",
-    "Biocon Park , SEZ, Bommasandra Industrial Area - Phase-IV , Bommasandra-Jigani Link Road, Bangalore - 560 099",
-    "+91-8028082808"
-  ),
-  createData(
-    "XCyton Diagnostics Pvt Ltd – Molecular Diagnostic Services",
-    "No.449, 10th Cross, 4th Phase, Peenya Industrial Area, Bangalore - 560 058",
-    "+91-8028367581, +91-8028367582, +91-8028367583, +91-8028367584, +91-8028367585"
-  ),
-  createData(
-    "Hybrinomics Life Science and diagnostics LLP",
-    "50, 2nd main, Maruthi township, B.Hanumanthanagar, Bileshivale, Doddagubbi Post, Near Asha township",
-    "+91-7975825968"
-  )
-];
+// const rows = [
+//   createData(
+//     "Command Hospital (Air Force)",
+//     "Agaram Post, Old Airport Road, Bengaluru 560007",
+//     "+91-8826115559, +91-8025369020"
+//   ),
+//   createData(
+//     "Bangalore Medical College & Research Institute",
+//     "Fort, Krishna Rajendra Rd, Bengaluru - 560002",
+//     "+91-8026703320, +91-8026707174, +91-8026702322 "
+//   ),
+//   createData(
+//     "National Institute of Virology, Bangalore Field Unit",
+//     "Rajiv Gandhi Institute of Chest Disease Premises, Near NIMHANS, Someshwaranagar, 1st Main, Dharmaram College Post, Bangalore 560029",
+//     "+91-8026654084, +91-8026654074	"
+//   ),
+//   createData(
+//     "National Institute of Mental Health and NeuroSciences",
+//     "Hosur Rd, near Bangalore Milk Dairy, Lakkasandra, Laljinagar, Wilson Garden, Bengaluru- 560029",
+//     "91-8026995201 "
+//   ),
+//   createData(
+//     "Indian Institute of Science, Bengaluru, (Department of Biochemistry, Centre for Infectious Disease Research)",
+//     "CV Raman Avenue, Bangalore-560012",
+//     "+91-8022933063"
+//   ),
+//   createData(
+//     "Neuberg Anand Reference Laboratory",
+//     "Anand Tower, #54, Bowring Hospital Road, Bengaluru - 560001",
+//     "+91-804251974"
+//   ),
+//   createData(
+//     "Cancyte Technologies Pvt Ltd",
+//     "Sri Shankara Research Centre, Rangadore Memorial Hospital, No.9, 1st Cross, Shankarapuram, Bangalore - 560 004",
+//     "+91-8041311877"
+//   ),
+//   createData(
+//     "Sakra World Hospital Lab Services",
+//     "Sy. No. 52/2 & 52/3, (Opp Intel, Outer Ring Road, Marathahalli) Devarabeesanahalli, Varthur Hobli, Bangalore- 560 103.",
+//     "+91-8049694969"
+//   ),
+//   createData(
+//     "Central Diagnostic Lab, Vydehi Institute of Medical Sciences and Research Centre",
+//     "#82, E.P.I.P. Area, Whitefield, Bengaluru-560066",
+//     "+91-8028412956,"
+//   ),
+//   createData(
+//     "Lab Services, Apollo Hospitals",
+//     "154/11, Opp IIM, Bannerghatta Road, Bengaluru-560076",
+//     "+91-8026304370"
+//   ),
+//   createData(
+//     "Syngene International Limited,",
+//     "Biocon Park , SEZ, Bommasandra Industrial Area - Phase-IV , Bommasandra-Jigani Link Road, Bangalore - 560 099",
+//     "+91-8028082808"
+//   ),
+//   createData(
+//     "XCyton Diagnostics Pvt Ltd – Molecular Diagnostic Services",
+//     "No.449, 10th Cross, 4th Phase, Peenya Industrial Area, Bangalore - 560 058",
+//     "+91-8028367581, +91-8028367582, +91-8028367583, +91-8028367584, +91-8028367585"
+//   ),
+//   createData(
+//     "Hybrinomics Life Science and diagnostics LLP",
+//     "50, 2nd main, Maruthi township, B.Hanumanthanagar, Bileshivale, Doddagubbi Post, Near Asha township",
+//     "+91-7975825968"
+//   )
+// ];
 
 function descendingComparator(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
@@ -339,19 +339,19 @@ function stableSort(array, comparator) {
 
 const headCells = [
   {
-    id: "name",
+    id: "LABNAME",
     numeric: false,
     disablePadding: true,
     label: "LAB NAME"
   },
   {
-    id: "address",
+    id: "ADDRESS",
     numeric: true,
     disablePadding: false,
     label: "ADDRESS"
   },
   {
-    id: "contact",
+    id: "CONTACT",
     numeric: true,
     disablePadding: false,
     label: "CONTACT"
@@ -522,10 +522,12 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function EnhancedTable() {
+export default function EnhancedTable(props) {
+  const rows = props.data;
+  console.log(rows);
   const classes = useStyles();
   const [order, setOrder] = React.useState("asc");
-  const [orderBy, setOrderBy] = React.useState("name");
+  const [orderBy, setOrderBy] = React.useState("LABNAME");
   const [selected, setSelected] = React.useState([]);
   const [page, setPage] = React.useState(0);
   const [dense, setDense] = React.useState(false);
@@ -634,10 +636,10 @@ export default function EnhancedTable() {
                         padding="none"
                         align="left"
                       >
-                        {row.name}
+                        {row.LABNAME}
                       </TableCell>
-                      <TableCell align="left">{row.address}</TableCell>
-                      <TableCell align="left">{row.contact}</TableCell>
+                      <TableCell align="left">{row.ADDRESS}</TableCell>
+                      <TableCell align="left">{row.CONTACT}</TableCell>
                     </TableRow>
                   );
                 })}
