@@ -9,13 +9,13 @@ import Button from "../elements/Button";
 const propTypes = {
   ...SectionTilesProps.types,
   pricingSwitcher: PropTypes.bool,
-  pricingSlider: PropTypes.bool,
+  pricingSlider: PropTypes.bool
 };
 
 const defaultProps = {
   ...SectionTilesProps.defaults,
   pricingSwitcher: false,
-  pricingSlider: false,
+  pricingSlider: false
 };
 
 class Pricing extends React.Component {
@@ -39,16 +39,16 @@ class Pricing extends React.Component {
     }
   }
 
-  handlePricingSwitch = (e) => {
+  handlePricingSwitch = e => {
     this.setState({ priceChangerValue: e.target.checked ? "1" : "0" });
   };
 
-  handlePricingSlide = (e) => {
+  handlePricingSlide = e => {
     this.setState({ priceChangerValue: e.target.value });
     this.handleSliderValuePosition(e.target);
   };
 
-  handleSliderValuePosition = (input) => {
+  handleSliderValuePosition = input => {
     const multiplier = input.value / input.max;
     const thumbOffset = this.thumbSize * multiplier;
     const priceInputOffset =
@@ -97,7 +97,7 @@ class Pricing extends React.Component {
 
     const sectionHeader = {
       title: " ",
-      paragraph: "",
+      paragraph: ""
     };
 
     return (
@@ -190,9 +190,7 @@ class Pricing extends React.Component {
                   <div className="pricing-item-content">
                     <div className="pricing-item-header pb-16 mb-24">
                       <div className="pricing-item-price">
-                        <span className="h5">
-                          Food, civil suppliers and BBMP
-                        </span>
+                        <span className="h5">Food, civil suppliers</span>
                       </div>
                     </div>
                     <div className="pricing-item-features mb-40">
@@ -211,18 +209,6 @@ class Pricing extends React.Component {
                         color="primary"
                         wide
                         href="tel:180-425-9339"
-                      >
-                        Dial
-                      </Button>
-                      <br />
-                      <ul className="pricing-item-features-list list-reset text-xs mb-32">
-                        BBMP: 080-22660000
-                      </ul>
-                      <Button
-                        tag="a"
-                        color="primary"
-                        wide
-                        href="tel:080-22660000"
                       >
                         Dial
                       </Button>
@@ -385,7 +371,7 @@ class Pricing extends React.Component {
                           {this.getPricingData(this.state.priceOutput.plan3, 1)}
                         </span> */}
                         <span className="h5">
-                          Denial of admission to hospitals
+                          Denial of admission to hospitals and BBMP
                         </span>
                       </div>
                       {/* <div className="text-color-low text-xs">
@@ -400,6 +386,18 @@ class Pricing extends React.Component {
                         1912
                       </ul>
                       <Button tag="a" color="primary" wide href="tel:1912">
+                        Dial
+                      </Button>
+                      <br />
+                      <ul className="pricing-item-features-list list-reset text-xs mb-32">
+                        BBMP: 080-22660000
+                      </ul>
+                      <Button
+                        tag="a"
+                        color="primary"
+                        wide
+                        href="tel:080-22660000"
+                      >
                         Dial
                       </Button>
                       <br />
