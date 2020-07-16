@@ -140,7 +140,7 @@ class Pricing extends React.Component {
                 <div className="tiles-item-inner has-shadow">
                   <div className="pricing-item-content">
                     <div className="pricing-item-header pb-16 mb-24">
-                      <div className="pricing-item-price">
+                      {/* <div className="pricing-item-price"> */}
                         {/* <span className="pricing-item-price-currency h2">
                           {this.getPricingData(this.state.priceOutput.plan1, 0)}
                         </span>
@@ -148,7 +148,7 @@ class Pricing extends React.Component {
                           {this.getPricingData(this.state.priceOutput.plan1, 1)}
                         </span> */}
                         <span className="h5">State Covid Control Room</span>
-                      </div>
+                      {/* </div> */}
                     </div>
                     <div className="pricing-item-features mb-40">
                       <ul className="pricing-item-features-list list-reset text-xs mb-32">

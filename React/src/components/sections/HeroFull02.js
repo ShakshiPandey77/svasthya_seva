@@ -5,23 +5,23 @@ import Image from "../elements/Image";
 import Modal from "../elements/Modal";
 
 const propTypes = {
-  ...SectionProps.types,
+  ...SectionProps.types
 };
 
 const defaultProps = {
-  ...SectionProps.defaults,
+  ...SectionProps.defaults
 };
 
 class HeroFull extends React.Component {
   state = {
-    videoModalActive: false,
+    videoModalActive: false
   };
-  openModal = (e) => {
+  openModal = e => {
     e.preventDefault();
     this.setState({ videoModalActive: true });
   };
 
-  closeModal = (e) => {
+  closeModal = e => {
     e.preventDefault();
     this.setState({ videoModalActive: false });
   };
@@ -59,7 +59,7 @@ class HeroFull extends React.Component {
           <div className={innerClasses}>
             <div className="hero-content">
               <div className="container-xs">
-                <h1 className="m-0 reveal-from-top">QUARANTINE CENTER</h1>
+                <h1 className="m-0 reveal-from-top">QUARANTINE CENTERS</h1>
               </div>
             </div>
             <div

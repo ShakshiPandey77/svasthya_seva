@@ -10,7 +10,7 @@ const propTypes = {
   hideNav: PropTypes.bool,
   hideSignin: PropTypes.bool,
   bottomOuterDivider: PropTypes.bool,
-  bottomDivider: PropTypes.bool,
+  bottomDivider: PropTypes.bool
 };
 
 const defaultProps = {
@@ -19,12 +19,12 @@ const defaultProps = {
   hideNav: false,
   hideSignin: false,
   bottomOuterDivider: false,
-  bottomDivider: false,
+  bottomDivider: false
 };
 
 class Header extends React.Component {
   state = {
-    isActive: false,
+    isActive: false
   };
 
   nav = React.createRef();
@@ -54,11 +54,11 @@ class Header extends React.Component {
     this.setState({ isActive: false });
   };
 
-  keyPress = (e) => {
+  keyPress = e => {
     this.state.isActive && e.keyCode === 27 && this.closeMenu();
   };
 
-  clickOutside = (e) => {
+  clickOutside = e => {
     if (!this.nav.current) return;
     if (
       !this.state.isActive ||
@@ -177,7 +177,7 @@ class Header extends React.Component {
                       </li>
                     </ul>
 
-                    <ul
+                    {/* <ul
                       className={classNames(
                         "list-reset text-xxs",
                         navPosition && `header-nav-${navPosition}`
@@ -188,7 +188,7 @@ class Header extends React.Component {
                           Awareness
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
                     <ul
                       className={classNames(
                         "list-reset text-xxs",
