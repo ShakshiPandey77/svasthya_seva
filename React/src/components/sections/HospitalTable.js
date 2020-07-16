@@ -53,6 +53,7 @@ export default class table extends React.Component {
               <Th>Hospital Name</Th>
               <Th>Covid Beds</Th>
               <Th>Covid Ventilators</Th>
+              <Th>Distance (Kms)</Th>
               <Th>Address</Th>
               <Th>Contact</Th>
             </Tr>
@@ -68,7 +69,7 @@ export default class table extends React.Component {
                 ) : (
                   <Td>0</Td>
                 )}
-
+                <Td>{row.distance}</Td>
                 <Td>{row.address}</Td>
                 <Td>{row.mobileNo}</Td>
               </Tr>
