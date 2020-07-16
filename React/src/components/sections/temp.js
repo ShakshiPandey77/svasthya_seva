@@ -260,6 +260,8 @@ export default function EnhancedTable(props) {
   const classes = useStyles();
   const [order, setOrder] = React.useState("asc");
   const [orderBy, setOrderBy] = React.useState("covidBeds");
+  const [orderBy1, setOrderBy1] = React.useState("covidVentillator");
+  const [orderBy2, setOrderBy2] = React.useState("distance");
   const [selected, setSelected] = React.useState([]);
   const [page, setPage] = React.useState(0);
   const [dense, setDense] = React.useState(false);
@@ -269,6 +271,8 @@ export default function EnhancedTable(props) {
     const isAsc = orderBy === property && order === "asc";
     setOrder(isAsc ? "desc" : "asc");
     setOrderBy(property);
+    setOrderBy1(property);
+    setOrderBy2(property);
   };
 
   // const handleSelectAllClick = event => {
