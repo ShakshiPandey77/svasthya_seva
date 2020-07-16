@@ -190,7 +190,7 @@ class Pricing extends React.Component {
                   <div className="pricing-item-content">
                     <div className="pricing-item-header pb-16 mb-24">
                       <div className="pricing-item-price">
-                        <span className="h5">Food, civil suppliers</span>
+                        <span className="h5">Food and civil suppliers</span>
                       </div>
                     </div>
                     <div className="pricing-item-features mb-40">
