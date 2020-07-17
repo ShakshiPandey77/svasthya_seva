@@ -80,7 +80,8 @@ class FeaturesSplit extends React.Component {
                   >
                     <i className="fw-500">
                       {" "}
-                      Wanna know about hospitals that are treating covid?
+                      Do you want to know about hospitals that are treating
+                      covid?
                     </i>
                     <br /> Find all the COVID-19 hospitals near you and check
                     for the availability of the beds and ventilators. Get in
@@ -131,7 +132,8 @@ class FeaturesSplit extends React.Component {
                     data-reveal-delay="100"
                   >
                     <i className="fw-500">
-                      Wanna know about quarantine centers you can reach out to?
+                      Do you want to know about quarantine centers you can reach
+                      out to?
                       <br />
                     </i>
                     Find out about the quarantine centers in your city.
@@ -179,7 +181,7 @@ class FeaturesSplit extends React.Component {
                   >
                     <i className="fw-500">
                       {" "}
-                      Wanna know more about testing centers near you?
+                      Do you want to know about testing centers near you?
                     </i>
                     <br />
                     Find out about the testing centers in your city.

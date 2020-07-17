@@ -50,11 +50,7 @@ class HeroFull extends React.Component {
                   className="m-0 mb-32 fs-25 reveal-from-top"
                   data-reveal-delay="150"
                 >
-                  <b>
-                    {" "}
-                    Your hunt to find near by covid hospitals with covid bed
-                    availability ends here.
-                  </b>
+                  <b> The Covid Herald</b>
                 </p>
 
                 {/* <div className="reveal-from-top" data-reveal-delay="300">
