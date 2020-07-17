@@ -92,7 +92,46 @@ class Secondary extends React.Component {
                 <AccordionItem title="How long does it take after exposure to COVID-19 to develop symptoms?">
                 The time between exposure to COVID-19 and the moment when symptoms start is commonly around five to six days but can range from 1 – 14 days.
                 </AccordionItem>
+                <AccordionItem title="What is the difference between self-isolation, self-quarantine and distancing?">
+                Quarantine means restricting activities or separating people who are not ill themselves but may have been exposed to COVID-19. The goal is to prevent spread of the disease at the time when people just develop symptoms..
+                <br/>
+                Isolation means separating people who are ill with symptoms of COVID-19 and may be infectious to prevent the spread of the disease.
+                <br/>
+                Physical distancing means being physically apart. WHO recommends keeping at least 1-metre distance from others. This is a general measure that everyone should take even if they are well with no known exposure to COVID-19.
+                </AccordionItem>
+                <AccordionItem title="What should I do if I have no symptoms, but I think I have been exposed to COVID-19? What does it mean to self-quarantine?">
+                To self-quarantine means to separate yourself from others because you have been exposed to someone with COVID-19 even though you, yourself, do not have symptoms.During self-quarantine you monitor yourself for symptoms.  The goal of the self-quarantine is to prevent transmission.  Since people who become ill with COVID-19 can infect people immediately self-quarantine can prevent some infections from happening.  .
+                <br/>
+                In this case:
 
+                <br/>1. Have a large, well-ventilated single room with hand hygiene and toilet facilities
+                <br/>2. If this is not available place beds at least 1 metre apart.
+                <br/>3. Keep at least 1-metre distance from others, even from your family members.
+                <br/>4. Monitor your symptoms daily
+                <br/>5. Self-quarantine for 14 days, even if you feel healthy
+                <br/>6. If you develop difficulty breathing, contact your healthcare provider immediately – call them first if possible.
+                <br/>7. Stay positive and energized by keeping in touch with loved ones by phone or online, and by exercising yourself at home.
+                <br/>However, if you live in an area with malaria or dengue fever it is important that you do not ignore symptoms of fever.  Seek medical help.  When you attend the health facility wear a mask if possible, keep at least 1 metre distant from other people and do not touch surfaces with your hands. If it is a child who is sick help the child stick to this advice.
+              </AccordionItem>
+              <AccordionItem title="How to properly wear a medical mask?">
+              If you choose to wear a mask:
+              <br/>
+              <br/>1. Before touching the mask, clean hands with an alcohol-based hand rub or soap and water
+              <br/>2. Take the mask and inspect it for tears or holes.
+              <br/>3. Orient which side is the top side (where the metal strip is).
+              <br/>4. Ensure the proper side of the mask faces outwards (the coloured side).
+              <br/>5. Place the mask to your face. Pinch the metal strip or stiff edge of the mask so it moulds to the shape of your nose.
+              <br/>6. Pull down the mask’s bottom so it covers your mouth and your chin.
+              <br/>7. Do not touch the mask while you are wearing it for protection.
+              <br/>8. After use, take off the mask with clean hands; remove the elastic loops from behind the ears while keeping the mask away from your face and clothes, to avoid touching potentially contaminated surfaces of the mask.
+              <br/>9. Discard the mask in a closed bin immediately after use. Do not reuse the mask.
+              <br/>10. Perform hand hygiene after touching or discarding the mask – Use alcohol-based hand rub or, if visibly soiled, wash your hands with soap and water.
+
+              <br/>Be aware that there is a global shortage of medical masks (both surgical masks and N95 masks). These should be reserved as much as possible for health care workers.
+
+              Remember that  masks are not a substitute for other, more effective ways to protect yourself and others against COVID-19 such as frequently washing your hands, covering your cough with the bend of elbow or tissue and maintain a distance of at least 1 meter from others
+            </AccordionItem>
+          
             </Accordion>
           </div>
 
