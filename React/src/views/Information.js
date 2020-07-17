@@ -22,7 +22,7 @@ import Accordion from '../components/elements/Accordion';
 import AccordionItem from '../components/elements/AccordionItem';
 
 import Symptoms from "../components/sections/Symptoms";
-import Questions from "../components/sections/Questions";
+import QuestionData from "../components/sections/QuestionData";
 
 class Information extends React.Component {
 
@@ -46,9 +46,9 @@ class Information extends React.Component {
 
 
 
-      <GenericSection
-      >
-          <Questions  />
+      <GenericSection>
+        <Symptoms  />
+
 
       </GenericSection>
 
@@ -58,10 +58,10 @@ class Information extends React.Component {
 
 
 
-            <Symptoms invertMobile  image />
-
-    
+      <QuestionData  />
       </GenericSection>
+
+
 
 
 

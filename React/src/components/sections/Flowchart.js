@@ -429,7 +429,7 @@ class primary extends React.Component {
                        <br/>
                         {/* <Button color="primary" onClick={this.onSubmit} wideMobile>click for Govt. Hopspitals</Button>
                         <Button color="primary"  wideMobile >click for Private Hospoitals </Button> */}
-                        <CardForFlowchart content={hospitallink}/>
+                        <Button color="primary" > {hospitallink}</Button>
 
                       </ButtonGroup>
                     </div>
