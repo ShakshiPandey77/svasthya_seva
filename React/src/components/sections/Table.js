@@ -14,16 +14,10 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 //import Checkbox from "@material-ui/core/Checkbox";
-import IconButton from "@material-ui/core/IconButton";
-import Tooltip from "@material-ui/core/Tooltip";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Switch from "@material-ui/core/Switch";
-import DeleteIcon from "@material-ui/icons/Delete";
-import FilterListIcon from "@material-ui/icons/FilterList";
-import { textAlign } from "@material-ui/system";
 
-function createData(name, location, address, beds, contact) {
-  return { name, location, address, beds, contact };
+
+function createData(name, location, address, beds) {
+  return { name, location, address, beds};
 }
 
 const rows = [
@@ -32,28 +26,28 @@ const rows = [
     "Bangalore urban",
     "560068	84,Hosur Rd Zuzuvadi Madiwala 1st Stage BTM Layout Bengaluru, BBMP Bommanahalli Zone",
     25,
-    "NA"
+    
   ),
   createData(
     "Haj Bhavan",
     "Bangalore urban",
     "560064	Kannuru Bellahalli Karnataka, BBMP Yelahanka ",
     240,
-    "NA"
+    
   ),
   createData(
     "OYO Rajmahal comforts",
     "Bangalore urban",
     "560094	Bus Stop 14 New BEL Rd near Chikkamanahalli Sadashiva Nagar Armane Nagar Bengaluru, BBMP West Zone	",
     16,
-    "NA"
+    
   ),
   createData(
     "Keys hotel",
     "Bangalore urban",
     "560048	Plot No 6 1st Phase ITPL Main Rd opp Graphite India Industrial Area Bengaluru, BBMP Mahadevapura ",
     240,
-    "NA"
+    
   )
   // createData("Gingerbread", 356, 16.0, 49, 3.9),
   // createData("Honeycomb", 408, 3.2, 87, 6.5),
@@ -112,7 +106,7 @@ const headCells = [
     label: "ADDRESS"
   },
   { id: "beds", numeric: true, disablePadding: false, label: "TOTAL BEDS" },
-  { id: "contact", numeric: true, disablePadding: false, label: "CONTACTS" }
+  // { id: "contact", numeric: true, disablePadding: false, label: "CONTACTS" }
 ];
 
 function EnhancedTableHead(props) {
