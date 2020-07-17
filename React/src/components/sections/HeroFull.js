@@ -44,7 +44,7 @@ class HeroFull extends React.Component {
         <div className="container-sm">
           <div className={innerClasses}>
             <div className="hero-content" style={inlineStyle()}>
-              <h1 className="mt-0 mb-16 reveal-from-top">Svasthya Seva</h1>
+              <h1 className="mt-0 mb-40 reveal-from-top">Svasthya Seva</h1>
               <div className="container-xs">
                 <p
                   className="m-0 mb-32 fs-25 reveal-from-top"

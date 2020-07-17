@@ -34,7 +34,11 @@ class Information extends React.Component {
 
     return (
       <React.Fragment>
-        <AwarenessTag hasBgColor invertColor />
+        <AwarenessTag
+          hasBgColor
+          invertColor
+          className="illustration-section-01"
+        />
 
         <GenericSection>
           <Symptoms />
