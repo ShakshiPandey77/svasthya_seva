@@ -68,13 +68,13 @@ const headCells = [
     id: "covidVentillator",
     numeric: true,
     disablePadding: false,
-    label: "COVID VENTILLATORS",
+    label: "COVID VENTILATORS",
   },
   {
     id: "distance",
     numeric: false,
     disablePadding: true,
-    label: "Distance (Kms)",
+    label: "DISTANCE (Kms)",
   },
   {
     id: "address",
@@ -260,8 +260,8 @@ export default function EnhancedTable(props) {
   const classes = useStyles();
   const [order, setOrder] = React.useState("asc");
   const [orderBy, setOrderBy] = React.useState("covidBeds");
-  const [orderBy1, setOrderBy1] = React.useState("covidVentillator");
-  const [orderBy2, setOrderBy2] = React.useState("distance");
+  // const [orderBy1, setOrderBy1] = React.useState("covidVentillator");
+  // const [orderBy2, setOrderBy2] = React.useState("distance");
   const [selected, setSelected] = React.useState([]);
   const [page, setPage] = React.useState(0);
   const [dense, setDense] = React.useState(false);
@@ -271,8 +271,8 @@ export default function EnhancedTable(props) {
     const isAsc = orderBy === property && order === "asc";
     setOrder(isAsc ? "desc" : "asc");
     setOrderBy(property);
-    setOrderBy1(property);
-    setOrderBy2(property);
+    // setOrderBy1(property);
+    // setOrderBy2(property);
   };
 
   // const handleSelectAllClick = event => {
@@ -384,7 +384,7 @@ export default function EnhancedTable(props) {
                         id={labelId}
                         scope="row"
                         padding="none"
-                        align="left"
+                        align="center"
                       >
                         {row.covidVentillator}
                       </TableCell>

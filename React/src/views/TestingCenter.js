@@ -8,7 +8,7 @@ class TestingCenter extends React.Component {
   constructor() {
     super();
     this.state = {
-      data: []
+      data: [],
     };
   }
   componentDidMount() {
@@ -17,26 +17,26 @@ class TestingCenter extends React.Component {
       .get(
         `https://iphy6zyd24.execute-api.ap-south-1.amazonaws.com/test1/testingcentres`
       )
-      .then(res => {
+      .then((res) => {
         const data = res.data;
         this.setState({
           data,
           currentPageNumber: res.currentPageNumber,
           totalItems: res.totalItems,
-          itemsPerPage: res.itemsPerPage
+          itemsPerPage: res.itemsPerPage,
         });
 
-        console.log("data");
+        console.log("Testingdata");
         console.log(data);
       });
     // this.setState({ loading: false });
   }
-  openModal = e => {
+  openModal = (e) => {
     e.preventDefault();
     this.setState({ demoModalActive: true });
   };
 
-  closeModal = e => {
+  closeModal = (e) => {
     e.preventDefault();
     this.setState({ demoModalActive: false });
   };
@@ -62,7 +62,7 @@ class TestingCenter extends React.Component {
 }
 const formStyle = {
   maxWidth: "420px",
-  margin: "0 auto"
+  margin: "0 auto",
 };
 
 export default TestingCenter;

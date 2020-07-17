@@ -334,7 +334,7 @@ function stableSort(array, comparator) {
     if (order !== 0) return order;
     return a[1] - b[1];
   });
-  return stabilizedThis.map(el => el[0]);
+  return stabilizedThis.map((el) => el[0]);
 }
 
 const headCells = [
@@ -342,20 +342,20 @@ const headCells = [
     id: "LABNAME",
     numeric: false,
     disablePadding: true,
-    label: "LAB NAME"
+    label: "LAB NAME",
   },
   {
     id: "ADDRESS",
     numeric: true,
     disablePadding: false,
-    label: "ADDRESS"
+    label: "ADDRESS",
   },
   {
     id: "CONTACT",
     numeric: true,
     disablePadding: false,
-    label: "CONTACT"
-  }
+    label: "CONTACT",
+  },
 ];
 
 function EnhancedTableHead(props) {
@@ -366,9 +366,9 @@ function EnhancedTableHead(props) {
     orderBy,
     numSelected,
     rowCount,
-    onRequestSort
+    onRequestSort,
   } = props;
-  const createSortHandler = property => event => {
+  const createSortHandler = (property) => (event) => {
     onRequestSort(event, property);
   };
 
@@ -383,7 +383,7 @@ function EnhancedTableHead(props) {
             inputProps={{ "aria-label": "select all" }}
           />
         </TableCell> */}
-        {headCells.map(headCell => (
+        {headCells.map((headCell) => (
           <TableCell
             key={headCell.id}
             align={headCell.numeric ? "left" : "left"}
@@ -416,37 +416,37 @@ EnhancedTableHead.propTypes = {
   onSelectAllClick: PropTypes.func.isRequired,
   order: PropTypes.oneOf(["asc", "desc"]).isRequired,
   orderBy: PropTypes.string.isRequired,
-  rowCount: PropTypes.number.isRequired
+  rowCount: PropTypes.number.isRequired,
 };
 
-const useToolbarStyles = makeStyles(theme => ({
+const useToolbarStyles = makeStyles((theme) => ({
   root: {
     paddingLeft: theme.spacing(2),
-    paddingRight: theme.spacing(1)
+    paddingRight: theme.spacing(1),
   },
   highlight:
     theme.palette.type === "dark"
       ? {
           color: theme.palette.secondary.dark,
-          backgroundColor: darken(theme.palette.secondary.dark, 0.85)
+          backgroundColor: darken(theme.palette.secondary.dark, 0.85),
         }
       : {
           color: theme.palette.text.primary,
-          backgroundColor: theme.palette.secondary.dark
+          backgroundColor: theme.palette.secondary.dark,
         },
   title: {
-    flex: "1 1 100%"
-  }
+    flex: "1 1 100%",
+  },
 }));
 
-const EnhancedTableToolbar = props => {
+const EnhancedTableToolbar = (props) => {
   const classes = useToolbarStyles();
   const { numSelected } = props;
 
   return (
     <Toolbar
       className={clsx(classes.root, {
-        [classes.highlight]: numSelected > 0
+        [classes.highlight]: numSelected > 0,
       })}
     >
       {numSelected > 0 ? (
@@ -490,22 +490,22 @@ const EnhancedTableToolbar = props => {
 };
 
 EnhancedTableToolbar.propTypes = {
-  numSelected: PropTypes.number.isRequired
+  numSelected: PropTypes.number.isRequired,
 };
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
-    paddingTop: theme.spacing(2)
+    paddingTop: theme.spacing(2),
   },
   paper: {
     width: "100%",
     marginBottom: theme.spacing(10),
     paddingRight: theme.spacing(6),
-    paddingLeft: theme.spacing(6)
+    paddingLeft: theme.spacing(6),
   },
   table: {
-    minWidth: 750
+    minWidth: 750,
     //marginLeft: 30,
     //marginRight: 30
   },
@@ -518,8 +518,8 @@ const useStyles = makeStyles(theme => ({
     padding: 10,
     position: "absolute",
     top: 20,
-    width: 1
-  }
+    width: 1,
+  },
 }));
 
 export default function EnhancedTable(props) {
@@ -572,16 +572,16 @@ export default function EnhancedTable(props) {
     setPage(newPage);
   };
 
-  const handleChangeRowsPerPage = event => {
+  const handleChangeRowsPerPage = (event) => {
     setRowsPerPage(parseInt(event.target.value, 10));
     setPage(0);
   };
 
-  const handleChangeDense = event => {
+  const handleChangeDense = (event) => {
     setDense(event.target.checked);
   };
 
-  const isSelected = name => selected.indexOf(name) !== -1;
+  const isSelected = (name) => selected.indexOf(name) !== -1;
 
   const emptyRows =
     rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);

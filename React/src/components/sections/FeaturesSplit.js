@@ -119,8 +119,7 @@ class FeaturesSplit extends React.Component {
                   </div>
                 </div>
               </div>
-              <br />
-              <br />
+
               <div className="split-item">
                 <div className="split-item-content center-content-mobile">
                   <div className="mt-0 mb-20  fw-700  fs-30 reveal-from-left">
@@ -167,8 +166,7 @@ class FeaturesSplit extends React.Component {
                   </div>
                 </div>
               </div>
-              <br />
-              <br />
+
               <div className="split-item">
                 <div className="split-item-content center-content-mobile">
                   <div className="mt-0 mb-20  fw-700  fs-30 reveal-from-left">
