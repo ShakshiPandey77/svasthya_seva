@@ -59,23 +59,18 @@ class FeaturesSplit extends React.Component {
     };
 
     return (
-      <section
-        {...props}
-        className={outerClasses}
-      >
 
-          <div className={innerClasses}>
+
 
             <div className={splitClasses}>
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile">
                 <h3 className="mt-0 mb-16 reveal-from-left" data-reveal-container=".split-item">
-                  Boost Your Immune System
-
+                  Symptoms
                 </h3>
                 <p className="m-0 reveal-from-left" data-reveal-container=".split-item" data-reveal-delay="100">
-                Our individual immunity is paramount for the next six months to a year, until a vaccine or cure for COVID-19 is publicly available. One could go so far to say that this deadly contagion has re-emphasised the importance of immunity for each one of us.<br/><br/>                                                                                                The key to maintaining a healthy immune system lies in a few good lifestyle choices. A healthy balanced diet, adequate sleep, mindful living through yoga, meditation and regular exercise are imperative to boost our immune system. Consuming vitamin rich foods and specific immunity uplifting items such as turmeric, almonds, etc can really help ensure our body’s natural defence mechanism.
+                The  most  common  symptoms  of  COVID-19  are  fever,  tiredness,  and dry   cough.   Some   patients   may   have   aches   and   pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually  mild  and  begin  gradually.  Some  people  become  infected  but don’t  develop  any  symptoms  and  don't  feel  unwell. <br/><br/> Most  people (about   80%)   recover   from   the   disease   without   needing   special treatment.  Around  1  out  of  every  6  people  who  gets COVID-19 becomes  seriously  ill  and  develops  difficulty  breathing.  Older  people, and those with underlying medical problems like high blood pressure, heart problems or diabetes, are more likely to develop serious illness. People with fever, cough and difficulty breathing should seek medical attention.
                 </p>
               </div>
               <div className={
@@ -86,13 +81,15 @@ class FeaturesSplit extends React.Component {
                 data-reveal-container=".split-item"
                 data-reveal-delay="200">
                 <Image
-                  src={require('./../../assets/images/sf1.jpeg')}
+                  src={require('./../../assets/images/sf3.jpeg')}
                   alt="Features split 03"
                   width={528}
                   height={396} />
 
               </div>
             </div>
+
+
 
               <div className="split-item">
                 <div className="split-item-content center-content-mobile">
@@ -124,7 +121,7 @@ class FeaturesSplit extends React.Component {
                   data-reveal-container=".split-item"
                   data-reveal-delay="200">
                   <Image
-                    src={require('./../../assets/images/sym3.jpg')}
+                    src={require('./../../assets/images/sp1.jpeg')}
                     alt="Features split 02"
                     width={500}
                     height={300} />
@@ -132,13 +129,16 @@ class FeaturesSplit extends React.Component {
                 </div>
               </div>
 
+
+
               <div className="split-item">
                 <div className="split-item-content center-content-mobile">
                   <h3 className="mt-0 mb-16 reveal-from-left" data-reveal-container=".split-item">
-                    Symptoms
+                    Boost Your Immune System
+
                   </h3>
                   <p className="m-0 reveal-from-left" data-reveal-container=".split-item" data-reveal-delay="100">
-                  The  most  common  symptoms  of  COVID-19  are  fever,  tiredness,  and dry   cough.   Some   patients   may   have   aches   and   pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually  mild  and  begin  gradually.  Some  people  become  infected  but don’t  develop  any  symptoms  and  don't  feel  unwell. <br/><br/> Most  people (about   80%)   recover   from   the   disease   without   needing   special treatment.  Around  1  out  of  every  6  people  who  gets COVID-19 becomes  seriously  ill  and  develops  difficulty  breathing.  Older  people, and those with underlying medical problems like high blood pressure, heart problems or diabetes, are more likely to develop serious illness. People with fever, cough and difficulty breathing should seek medical attention.
+                  Our individual immunity is paramount for the next six months to a year, until a vaccine or cure for COVID-19 is publicly available. One could go so far to say that this deadly contagion has re-emphasised the importance of immunity for each one of us.<br/><br/>                                                                                                The key to maintaining a healthy immune system lies in a few good lifestyle choices. A healthy balanced diet, adequate sleep, mindful living through yoga, meditation and regular exercise are imperative to boost our immune system. Consuming vitamin rich foods and specific immunity uplifting items such as turmeric, almonds, etc can really help ensure our body’s natural defence mechanism.
                   </p>
                 </div>
                 <div className={
@@ -149,7 +149,7 @@ class FeaturesSplit extends React.Component {
                   data-reveal-container=".split-item"
                   data-reveal-delay="200">
                   <Image
-                    src={require('./../../assets/images/sf3.jpeg')}
+                    src={require('./../../assets/images/sf1.jpeg')}
                     alt="Features split 03"
                     width={528}
                     height={396} />
@@ -157,12 +157,10 @@ class FeaturesSplit extends React.Component {
                 </div>
               </div>
 
-
-
             </div>
-          </div>
-        
-      </section>
+
+
+
     );
   }
 }
