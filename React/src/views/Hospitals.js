@@ -2,11 +2,11 @@ import React from "react";
 
 // import sections
 import HeroFull from "../components/sections/HeroFull03";
-import HospitalTable from "../components/sections/temp";
+import HospitalTable from "../components/sections/HospitalTable.js";
 import axios from "axios";
 
 const haversine = require("haversine");
-// import HospitalTable from "../components/sections/HospitalTable";
+// import HospitalTable from "../components/sections/temp";
 class Hospitals extends React.Component {
   constructor() {
     super();
