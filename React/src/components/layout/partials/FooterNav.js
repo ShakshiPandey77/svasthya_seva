@@ -14,9 +14,9 @@ const FooterNav = ({ className, ...props }) => {
         <li>
           <a href="mailto:svasthyaseva@gmail.com">Contact Us</a>
         </li>
-        {/* <li>
-          <Link to="/faqs/">FAQ's</Link>
-        </li> */}
+        <li>
+          <Link to="/information/">FAQ's</Link>
+        </li>
         {/* <li>
           <Link to="/support/">Support</Link>
         </li> */}

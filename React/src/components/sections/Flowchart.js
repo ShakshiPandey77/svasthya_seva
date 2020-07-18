@@ -25,6 +25,7 @@ class primary extends React.Component {
 
   state = {
     demoModalActive: false,
+    
     c1:false,
     c2:false,
     c3:false,
@@ -50,11 +51,15 @@ class primary extends React.Component {
 
   handler = (e) => {
     e.preventDefault();
+   
     if(e.target.id==="1")
     {
       this.setState({ c1: !this.state.c1 });
-      if(this.state.c2)
-          this.setState({c2: !this.state.c2});
+      //this.setState({c2: !this.state.c2});
+      if(!this.state.c2)
+        this.setState({c2: !this.state.c2});
+      // if(this.state.c2)
+      //     this.setState({c2: !this.state.c2});
       if(this.state.c3)
           this.setState({c3: !this.state.c3});
       if(this.state.c4)
@@ -76,6 +81,8 @@ class primary extends React.Component {
 
     if(e.target.id==="2")
     {
+        //this.setState({c2: !this.state.c2});
+      if(!this.state.c2)
         this.setState({c2: !this.state.c2});
       if(this.state.c3)
           this.setState({c3: !this.state.c3});
@@ -99,12 +106,14 @@ class primary extends React.Component {
     if(e.target.id==="3")
       {
         this.setState({c3: !this.state.c3});
+        if(!this.state.c5)
+        this.setState({c5: !this.state.c5});
         if(this.state.c2)
           this.setState({c2: !this.state.c2});
         if(this.state.c4)
           this.setState({c4: !this.state.c4});
-        if(this.state.c5)
-          this.setState({c5: !this.state.c5});
+        // if(this.state.c5)
+        //   this.setState({c5: !this.state.c5});
         if(this.state.c6)
           this.setState({c6: !this.state.c6});
         if(this.state.c7)
@@ -120,12 +129,14 @@ class primary extends React.Component {
       if(e.target.id==="4")
       {
         this.setState({c4: !this.state.c4});
+        if(!this.state.c5)
+        this.setState({c5: !this.state.c5});
         if(this.state.c2)
           this.setState({c2: !this.state.c2});
         if(this.state.c3)
           this.setState({c3: !this.state.c3});
-        if(this.state.c5)
-          this.setState({c5: !this.state.c5});
+        // if(this.state.c5)
+        //   this.setState({c5: !this.state.c5});
         if(this.state.c6)
           this.setState({c6: !this.state.c6});
         if(this.state.c7)
@@ -140,6 +151,8 @@ class primary extends React.Component {
       }
       if(e.target.id==="5")
       {
+        //this.setState({c5: !this.state.c5});
+        if(!this.state.c5)
         this.setState({c5: !this.state.c5});
         if(this.state.c6)
           this.setState({c6: !this.state.c6});
@@ -156,12 +169,14 @@ class primary extends React.Component {
       if(e.target.id==="6")
       {
         this.setState({c6: !this.state.c6});
+        if(!this.state.c8)
+        this.setState({c8: !this.state.c8});
         if(this.state.c5)
           this.setState({c5: !this.state.c5});
         if(this.state.c7)
           this.setState({c7: !this.state.c7});
-      if(this.state.c8)
-          this.setState({c8: !this.state.c8});
+      // if(this.state.c8)
+      //     this.setState({c8: !this.state.c8});
       if(this.state.c9)
           this.setState({c9: !this.state.c9});
       if(this.state.c10)
@@ -171,12 +186,14 @@ class primary extends React.Component {
       if(e.target.id==="7")
       {
         this.setState({c7: !this.state.c7});
+        if(!this.state.c8)
+        this.setState({c8: !this.state.c8});
         if(this.state.c5)
           this.setState({c5: !this.state.c5});
         if(this.state.c6)
           this.setState({c6: !this.state.c6});
-      if(this.state.c8)
-          this.setState({c8: !this.state.c8});
+      // if(this.state.c8)
+      //     this.setState({c8: !this.state.c8});
       if(this.state.c9)
           this.setState({c9: !this.state.c9});
       if(this.state.c10)
@@ -185,8 +202,9 @@ class primary extends React.Component {
       }
       if(e.target.id==="8")
       {
+        // this.setState({c8: !this.state.c8});
+        if(!this.state.c8)
         this.setState({c8: !this.state.c8});
-
       if(this.state.c9)
           this.setState({c9: !this.state.c9});
       if(this.state.c10)
@@ -227,30 +245,35 @@ class primary extends React.Component {
 
   render() {
     let hospitalUrl="/hospitals";
-    let hospitallink=<a href={hospitalUrl}>Click to find COVID Hospitals</a>
+    let hospitallink=<a href={hospitalUrl}>Click to find COVID Hospitals.</a>
     let contentrule=<div>1. Strictly isolate yourself at home till
-    test result is received<br/> 2.Follow doctor's instructions</div>
+    test result is received<br/> 2.Follow Doctor's instructions</div>
     let contentisolation=<div>Home isolation<br/>Hotel isolation(Paid by Patient)<br/>
     Isolation Centers Government(Covid Care centers-CCC)</div>
     return (
       <React.Fragment>
 
-
+              
 
                 <div className="container">
 
                   <div className="center-content">
+                    
                     <div>
+                    
                       <ButtonGroup>
                         <Button
                           color="primary"
                           aria-controls="demo-modal"
                           onClick={this.handler}
                           id="1">
-                          Not feeling well?
+                          Not feeling well? (Click Here!)
                         </Button>
                       </ButtonGroup>
+                   
                     </div>
+                    
+                  
 
                   <div className="container-xs">
                     {
@@ -261,7 +284,7 @@ class primary extends React.Component {
                       <CardForFlowchart content="Consult Doctor Or Visit Fever Clinic"/>
                       <br/>
                       <ButtonGroup>
-                        <Button color="primary" id="2" onClick={this.handler} wideMobile>IS Covid Test recommended ?</Button>
+                        <Button color="primary" id="2" onClick={this.handler} wideMobile>Is COVID test recommended ?</Button>
                         {/* <Button color="primary" id="3" onClick={this.handler} wideMobile>Visit Fever Clinic</Button> */}
 
                       </ButtonGroup>
@@ -308,7 +331,7 @@ class primary extends React.Component {
                         <CardForFlowchart content={contentrule}/>
                         <br/>
                         <ButtonGroup>
-                        <Button color="primary" id="5" onClick={this.handler} wideMobile>What is your COVID Test Result ?</Button>
+                        <Button color="primary" id="5" onClick={this.handler} wideMobile>What is your COVID test result ?</Button>
 
                       </ButtonGroup>
 
